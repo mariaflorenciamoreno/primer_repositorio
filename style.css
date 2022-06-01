@@ -1,0 +1,528 @@
+/* inicia el css inicio-movil */
+@media screen and (max-width:480px){
+    /* Inicia Css de la pagina de Inicio-movil*/
+    body{
+        background-color: rgb(210, 250, 210);
+        font-family: 'Amatic SC', cursive;
+        font-size: 25px;
+        color: black;
+        padding: 0;
+        margin-bottom:0;
+        } 
+    /* inicia estilos del header */
+    header{
+        background-color: white;
+        padding: auto;
+        margin-top: -10px;
+        margin-right: -15px;
+        margin-bottom: -10px;
+        margin-left: -6px;
+    }
+    .cabecera1{
+        background-color: white;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+        "logo nav";
+        justify-items: space-between;
+    }
+    .logo{
+        width: 300px;
+        height: 200px;
+        display: flex;
+        grid-area: logo;
+    }
+    #nav{
+        list-style-type: none;
+        text-decoration: none;
+        color: black;
+        grid-area: nav;
+    }
+    .menu, a{
+        list-style-type: none;
+        text-decoration: none;
+        color: black;
+    }
+    #nav, .menu, a:hover{
+        color: palevioletred; 
+    }
+    .cuotas{
+        width: 470px;
+        height: 300px;
+    }
+    /* inicia Css Main-movil */
+    main{
+        display: grid;
+        grid-template-columns:repeat(1, 1fr);
+        grid-template-rows: 0.3fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "promo-title"
+        "promo1"
+        "promo2"
+        "promo3"
+        "promo4";
+        row-gap: 2px;
+        align-items: center;
+        justify-items: center;
+    }
+    .promo-title{
+        grid-area: promo-title;
+    }
+    .promo1{
+        grid-area: promo1;
+    }
+    .promo2{
+        grid-area: promo2;
+    }
+    .promo3{
+        grid-area: promo3;
+    }
+    .promo4{
+        grid-area: promo4;
+    }
+    .img-1{
+        width: 400px;
+        height: 500px;
+    }
+    .img-2{
+        width: 400px;
+        height: 500px;
+    }
+    .img-3{
+        width: 400px;
+        height: 500px;
+    }
+    .img-4{
+        width: 400px;
+        height: 500px;
+    }
+
+    /* inicia css- footer-movil */
+    footer{
+        background-color: white;
+        height: 500px;
+        padding: 0;
+        margin-top: -13px;
+        margin-right: -15px;
+        margin-bottom: -10px;
+        margin-left: -6px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows:repeat(8, 0.3fr);
+        row-gap: 0.3fr;
+        grid-template-areas:
+        "redes"
+        "leyenda"
+        "redes2"
+        "redes3"
+        "medios-pago"
+        "medios-pago"
+        "pago-visa"
+        "pago-master";
+        justify-items: center;
+    }
+    .redes{
+        grid-area: redes;
+        padding-left: auto;
+        font-size: 20px;
+        margin-right: 10px;
+        margin-top: -3px;
+        margin-left: 0px;
+        margin-bottom: -20px;
+        justify-content: center;
+    }
+    .leyenda,p{
+        font-size: 18px;
+        grid-area: leyenda;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .redes2{
+        grid-area: redes2;
+        font-size: 20px;
+        list-style-type: none;
+        text-decoration: none;
+        justify-items: center;
+        padding: 0;
+        margin-top: -6px;
+        margin-bottom: -10px;
+    }
+    .redes3{
+        grid-area: redes3;
+        font-size: 20px;
+        list-style-type: none;
+        text-decoration: none;
+        justify-items: center;
+        padding: 0;
+        margin-top: -6px;
+        margin-bottom: -10px;
+    }
+    .redes2:hover{
+        color: palevioletred;
+    }
+    .redes3:hover{
+        color:palevioletred
+    }
+    .medios-pago{
+        grid-area: medios-pago;
+        padding: 0;
+        margin-top: -6px;
+        margin-bottom: -10px;
+
+    }
+    .pago-visa{
+        grid-area: pago-visa;
+        padding: 0;
+        margin-top: -50px;
+        margin-bottom: -10px;
+
+    }
+    .pago-master{
+        grid-area: pago-master;
+        padding: 0;
+        margin-top: -50px;
+        margin-bottom: -50px;
+    }
+    /* inicia Css pagina Nosotros-movil */
+    .nosotros-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(9, 1fr);
+        grid-template-areas:
+        "about-us"
+        "par1"
+        "par2"
+        "par3"
+        "par4"
+        "ubicacion"
+        "mapa"
+        "direccion"
+        "partido";
+        justify-items: center;
+        align-items: center;
+    }
+    .about-us{
+        grid-area: about-us;
+        display: flex;
+        justify-items: center;
+        padding: 0;
+        margin-top: -100px;
+        margin-bottom: -100px;
+    }
+    .par1{
+        grid-area: par1;
+        padding: 0;
+        margin-top: -110px;
+
+    }
+    .par2{
+        grid-area: par2;
+        padding: 0;
+        margin-top: -110px;
+
+    }
+    .par3{
+        grid-area: par3;
+        padding: 0;
+        margin-top: -110px;
+    }
+    .par4{
+        grid-area: par4;
+        margin-top: -110px;
+
+    }
+    .ubicacion{
+        grid-area: ubicacion;
+        display: flex;
+        justify-items: center;
+        margin-top: -110px;
+    }
+    .mapa{
+        grid-area: mapa;
+        display: flex;
+        justify-items: center;
+        padding: 0;
+        margin-top: -110px;
+    }
+    .datos{
+        grid-area: datos;
+        margin-top: -110px;
+        margin-bottom: -50px;
+
+    }
+    .direccion{
+        grid-area: direccion;
+        display: flex;
+        margin-top: -100px;
+    }
+    .partido{
+        grid-area: partido;
+        display: flex;
+        padding: 0;
+        margin-top: -100px;
+}
+}
+
+@media screen and (min-width:481px) and (max-width: 1440px) {
+    
+/* /* Inicia Css de la pagina de Inicio */
+  body{
+    background-color: rgb(210, 250, 210);
+    font-family: 'Amatic SC', cursive;
+    font-size: 30px;
+    color: black;
+    display: block;
+}
+/* inicia estilos del header */
+  header{
+    background-color: white;
+    padding: auto;
+    display: flex;
+    margin-top: -6px;
+    margin-right: -20px;
+    margin-bottom: -13px;
+    margin-left: -6px;
+}
+  .cabecera1{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: 
+    "logo nav"
+    ;
+}
+.logo{
+    height: 10rem;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    grid-area: logo;
+}
+#nav{
+    font-size: 30px;
+    text-align: center;
+    text-indent: 4rem;
+    list-style-type: none;
+    margin:0;
+    background-color: white;
+    padding: auto;
+    grid-area: nav;
+    justify-content: start;
+}
+#nav,ul, li{
+    display: flex;
+  }
+.menu a{
+   text-decoration: none;
+   color: black;
+   display: flex;
+   padding: 20px;
+   top: 0px;
+}
+#nav, .menu, a:hover{
+    color: palevioletred; 
+}
+.cuotas{
+    position: relative;
+    top:0px;
+    bottom: 0px;
+    padding-top: -1000px;
+    margin-top: -2px;
+    width: 99.8%;
+}
+/* inicia el css del main */
+main{
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+    grid-template-rows: 0.3fr 1fr 1fr;
+    grid-template-areas:
+    "promo-title  promo-title promo-title promo-title"
+    "promo1 promo1      promo2    promo2"
+    "promo3 promo3      promo4    promo4"
+    ;
+    column-gap: 20px;
+    align-items: center;
+    justify-items: center;
+}
+.promo-title{
+    grid-area: promo-title;
+}
+.promo1{
+    grid-area: promo1;
+    justify-items: flex-end;
+}
+.img-1{
+    transition: height 2s, width 2s;
+    width: 70%;
+    height: 70%;
+}
+.promo1, .img-1:hover{
+    height: 400px;
+    width: 400px;
+}
+.promo2{
+    grid-area: promo2;
+}
+.img-2{
+    transition: height 2s, width 2s;
+    width: 80%;
+    height: 80%;
+
+}
+.promo2, .img-2:hover{
+    height: 400px;
+    width: 400px;
+}
+.promo3{
+    grid-area: promo3;
+}
+.img-3{
+    transition: height 2s, width 2s;
+    width: 80%;
+    height: 80%;
+
+}
+.promo3, .img-3:hover{
+    height: 500px;
+    width: 500px;
+}
+.promo4{
+    grid-area: promo4;
+}
+.img-4{
+    transition: height 2s, width 2s;
+    width: 80%;
+    height: 80%;
+
+}
+.promo4, .img-4:hover{
+    height: 500px;
+    width: 500px;
+}
+/* inicia el css del footer */
+footer{
+    background-color: white;
+    height: 450px;
+    padding-top: auto;
+    margin-top: -13px;
+    margin-right: -20px;
+    margin-bottom: -6px;
+    margin-left: -6px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows:repeat(5, 0.3fr) ;
+    grid-template-areas:
+    "redes redes"
+    "leyenda leyenda"
+    "redes2 redes3"
+    "medios-pago  medios-pago"
+    "pago-visa pago-master";
+    justify-items: center;
+}
+.redes{
+    grid-area: redes;
+    font-size: 30px;
+    padding-left: 0px;
+    margin-top: 0px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    justify-content: center;
+}
+.leyenda,p{
+    font-size: 25px;
+    grid-area: leyenda;
+    justify-content: center;
+    align-items: flex-start;
+}
+.redes2{
+    grid-area: redes2;
+    list-style-type: none;
+    text-decoration: none;
+    justify-items: center;
+}
+.redes3{
+    grid-area: redes3;
+    list-style-type: none;
+    text-decoration: none;
+    justify-items: center;
+}
+.medios-pago{
+    grid-area: medios-pago;
+}
+
+.pago-visa{
+    grid-area: pago-visa;
+}
+.pago-master{
+    grid-area: pago-master;
+}
+/* inicia Css de pagina Nosotros */
+.nosotros-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5px;
+    grid-template-rows: repeat(8, 1fr);
+    row-gap: 10px;
+    grid-template-areas:
+    "about-us about-us"
+    "par1 par1"
+    "par2 par2"
+    "par3 par3"
+    "par4 par4"
+    "ubicacion ubicacion"
+    "mapa direccion"
+    "mapa partido";
+    justify-items: center;
+    align-items: center;
+}
+.about-us{
+    grid-area: about-us;
+    display: flex;
+    justify-items: center;
+}
+.par1{
+    grid-area: par1;
+}
+.par2{
+    grid-area: par2;
+}
+.par3{
+    grid-area: par3;
+}
+.par4{
+    grid-area: par4;
+}
+.ubicacion{
+    grid-area: ubicacion;
+    display: flex;
+    justify-items: center;
+}
+.mapa{
+    grid-area: mapa;
+    display: flex;
+    justify-items: end;
+}
+.datos{
+    grid-area: datos;
+}
+.direccion{
+    grid-area: direccion;
+    display: flex;
+    justify-items: flex-start;
+}
+.partido{
+    grid-area: partido;
+    display: flex;
+    justify-items: flex-start;
+}
+/* productos */
+#imgab, #imgcd, #imgef, #imggh{
+    display: flex;
+    justify-content: space-around;
+  
+}
+.imgA, .imgB, .imgC, .imgD,.imgE, .imgF, .imgG, .imgH{
+    border: solid 2px palegreen;
+} 
+}
