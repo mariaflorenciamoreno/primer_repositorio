@@ -263,10 +263,7 @@
 }
 
 @media screen and (min-width:481px) and (max-width: 1440px) {
-body{
-    margin-bottom: 100px;
-    padding-bottom: 30px;
-}
+
     .cabecera1{
     margin-top:-6px;
     margin-right: -23px;
@@ -457,12 +454,7 @@ footer{
     text-decoration: none;
     justify-items: center;
 }
-.redes2:hover{
-    color: palevioletred;
-}
-.redes3:hover{
-    color:palevioletred
-}
+
 .medios-pago{
     grid-area: medios-pago;
 }
