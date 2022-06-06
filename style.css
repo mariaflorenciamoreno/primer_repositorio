@@ -27,8 +27,7 @@
         justify-items: space-between;
     }
     .logo{
-        width: 300px;
-        height: 200px;
+        width: 50%;
         display: flex;
         grid-area: logo;
     }
@@ -264,60 +263,87 @@
 }
 
 @media screen and (min-width:481px) and (max-width: 1440px) {
-    
+body{
+    margin-bottom: 100px;
+    padding-bottom: 30px;
+}
+    .cabecera1{
+    margin-top:-6px;
+    margin-right: -23px;
+    margin-left: -6px;
+}
+.colorFondo{
+    background-color: white;
+}
+.cuotas{
+    position: relative;
+    top:0px;
+    bottom: 0px;
+    padding-top: -1000px;
+    margin-top: 10px;
+    width: 99.8%;
+}
 /* /* Inicia Css de la pagina de Inicio */
-  body{
+/*   body{
     background-color: rgb(210, 250, 210);
     font-family: 'Amatic SC', cursive;
     font-size: 30px;
     color: black;
-    display: block;
-}
+} */
 /* inicia estilos del header */
-  header{
-    background-color: white;
+/*   header{
+    background-color: rgb(160, 134, 134);
     padding: auto;
     display: flex;
-    margin-top: -6px;
-    margin-right: -20px;
-    margin-bottom: -13px;
-    margin-left: -6px;
-}
+    position: absolute;
+    width: 100%;
+    margin-top: 0;
+    margin-left: 0;
+} */
+/* 
   .cabecera1{
     background-color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: auto;
+    margin-top: -6px;
+    margin-right: -25px;
+    margin-bottom: -6px;
+    margin-left: -6px;
     display: grid;
     grid-template-columns: 1fr 3fr;
     grid-template-areas: 
     "logo nav"
-    ;
-}
+  }
+    
+
+
 .logo{
-    height: 10rem;
+    width: 300px;
     position: relative;
     top: 0px;
     left: 0px;
     grid-area: logo;
 }
 #nav{
-    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 23px;
     text-align: center;
-    text-indent: 4rem;
+    text-indent: 30px;
     list-style-type: none;
-    margin:0;
-    background-color: white;
-    padding: auto;
-    grid-area: nav;
-    justify-content: start;
+    margin-right: -23px;
 }
 #nav,ul, li{
     display: flex;
-  }
+}
 .menu a{
-   text-decoration: none;
-   color: black;
-   display: flex;
-   padding: 20px;
-   top: 0px;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    padding: 20px;
+    top: 0px;
 }
 #nav, .menu, a:hover{
     color: palevioletred; 
@@ -328,10 +354,11 @@
     bottom: 0px;
     padding-top: -1000px;
     margin-top: -2px;
-    width: 99.8%;
-}
+    width: 99%;
+} */
 /* inicia el css del main */
-main{
+
+/* main{
     display: grid;
     grid-template-columns:repeat(4, 1fr);
     grid-template-rows: 0.3fr 1fr 1fr;
@@ -343,6 +370,9 @@ main{
     column-gap: 20px;
     align-items: center;
     justify-items: center;
+} */
+.conteiner{
+    padding:10px;
 }
 .promo-title{
     grid-area: promo-title;
@@ -352,60 +382,40 @@ main{
     justify-items: flex-end;
 }
 .img-1{
-    transition: height 2s, width 2s;
-    width: 70%;
-    height: 70%;
-}
-.promo1, .img-1:hover{
-    height: 400px;
-    width: 400px;
-}
+    size: 300px 300px;
+ }
+
 .promo2{
     grid-area: promo2;
 }
 .img-2{
-    transition: height 2s, width 2s;
-    width: 80%;
-    height: 80%;
+    width: 60%;
+    height: 90%;
+}
 
-}
-.promo2, .img-2:hover{
-    height: 400px;
-    width: 400px;
-}
 .promo3{
     grid-area: promo3;
 }
 .img-3{
-    transition: height 2s, width 2s;
-    width: 80%;
+    width: 70%;
     height: 80%;
+}
 
-}
-.promo3, .img-3:hover{
-    height: 500px;
-    width: 500px;
-}
 .promo4{
     grid-area: promo4;
 }
 .img-4{
-    transition: height 2s, width 2s;
-    width: 80%;
+    width: 70%;
     height: 80%;
+}
 
-}
-.promo4, .img-4:hover{
-    height: 500px;
-    width: 500px;
-}
-/* inicia el css del footer */
+ /* inicia el css del footer */
 footer{
     background-color: white;
     height: 450px;
     padding-top: auto;
     margin-top: -13px;
-    margin-right: -20px;
+    margin-right: -23px;
     margin-bottom: -6px;
     margin-left: -6px;
     display: grid;
@@ -447,10 +457,15 @@ footer{
     text-decoration: none;
     justify-items: center;
 }
+.redes2:hover{
+    color: palevioletred;
+}
+.redes3:hover{
+    color:palevioletred
+}
 .medios-pago{
     grid-area: medios-pago;
 }
-
 .pago-visa{
     grid-area: pago-visa;
 }

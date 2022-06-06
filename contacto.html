@@ -4,87 +4,120 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
     <title>Ambos Sidd- Moreno Maria Florencia</title>
 </head>
-<body>
+<body class="bg-success p-2 text-black bg-opacity-50 me-0">
   <header class="cabecera1">
-    <img class="logo" src="img/logo2.png" alt="logoAmbosSidd">
     <!--Inicio del Nav-->
-    <nav id="nav">
-      <strong>
-      <ul>
-        <li class="menu"><a href="index.html">Inicio</a></li>
-        <li class="menu"><a href="producto.html">Productos</a></li>
-        <li class="menu"><a href="carrito.html">Carrito</a></li>
-        <li class="menu"><a href="nosotros.html">Nosotros</a></li>
-        <li class="menu"><a href="contacto.html">Contacto</a></li>
-      </ul>
-    </strong>
+    <nav class="navbar navbar-expand-lg colorFondo">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="./img/logo2.png" class="img-fluid" width="300px" height="200px" alt="Logo2"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-5 mr-0 fs-3 ColorLetra">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="producto.html">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="carrito.html">Carrito</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+          <form class="d-flex ms-5" role="search">
+            <input class="form-control me-2" type="search"  aria-label="Search">
+            <button class="btn btn-outline-dark" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
     </nav>
-    <!--Fin del Nav-->
+<!--Fin del Nav-->
 </header>
-     <hr>
-    <h2>
+        <h2 class="mt-5 ms-4">
         Escribinos
-    </h2>
-          <p>Si tenes alguna duda, dejanos tus datos para contactarnos a la brevedad</p>
+        </h2>
+          <p class="mx-3 ms-4 p-1">Si tenes alguna duda, dejanos tus datos para contactarnos a la brevedad</p>
           <!--Inicio del Formulario-->
-          <form action="#">
-             <label for="Nombre">Nombre:</label>
-             <input type="text" name="" id="">
-             <br>
-             <label for="Apellido">Apellido:</label>
-             <input type="text" name="">
-             <br>
-             <label for="Email">Email:</label>
-             <input type="email" name="" id="">
-             <br>
-             <label for="telefono">Telefono:</label>
-             <input type="tel" name="Telefono" id="">
-             <br>
-             <label for="text">Genero:</label>
-             <select name="genero" id="gener">
-                 <option value="id=0">Elegir opcion</option>
-                 <option value="opcion 1">Mujer</option>
-                 <option value="opcion 2">Hombre</option>
-             </select>
-             <br>
-             <label for="text">¿Queres enterarte antes de las promociones?</label>
+          <form action="#" class="ms-4 y-2">
+            <div>
+              <label for="Nombre" >Nombre:</label>
+              <input class="mt-1 mb-1" type="text" name="" id="">
+              <br>
+              <label for="Apellido">Apellido:</label>
+              <input class="mt-1 mb-1" type="text" name="">
+              <br>
+              <label for="Email">Email:</label>
+              <input class="mt-1 mb-1" type="email" name="" id="" required>
+              <br>
+              <label for="telefono">Telefono:</label>
+              <input class="mt-1 mb-1" type="tel" name="Telefono" id="">
+              <br>
+              <label for="text">Genero:</label>
+              <select name="genero" id="genero" class="mt-1 mb-1">
+                  <option value="id=0">Elegir opcion</option>
+                  <option value="opcion 1">Mujer</option>
+                  <option value="opcion 2">Hombre</option>
+              </select>
+            </div>
+              <!-- <br>
+              <label for="text">¿Queres enterarte antes de las promociones?</label>
               <input type="checkbox" name="" id="">
               <br>
-              <br>
-              <textarea name="Comentario" cols="30" rows="10">
+              <br> -->
+              <div class="col-12 mt-3 " >
+                <div class="form-check">
+                  <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" >
+                  <label class="form-check-label text-black" for="invalidCheck3">
+                    ¿Queres enterarte antes de las promociones?
+                  </label>
+                </div>
+              </div>
+              <div >
+              <textarea class="mt-5" name="Comentario" cols="37" rows="10">
               </textarea>
+            </div>
               <br>
-              <button type="reset">Limpiar formulario</button>
-              <input type="submit" value="Enviar">  
+              <div>
+              <button type="reset" class="btn btn-outline-dark btn-lg">Limpiar Formulario</button>
+              <button type="submit" class="btn btn-outline-dark btn-lg">Enviar</button>
+            </div>
+              <!-- <input type="submit" value="Enviar">   -->
             </form>
-           <!--Fin del Formulario-->
-<br>
-<br>
-<br>
-<br>
-<br>
+            <!--Fin del Formulario-->
+            <br>
+            <br>
 <!--Inicio del Footer-->
 <hr>
-<footer>
-  <div class="redes">
+<footer class="mr-5">
+  <div class="redes mt-4">
       <h3>Nuestras Redes</h3>
   </div> 
-    <div class="leyenda">   
-      <p>Seguinos en nuestras redes para no perderte ninguna promocion y conocer los ultimos ingresos</p>
+    <div class="leyenda ms-4">   
+      <p class="fs-2 mx-4 p-3">Seguinos en nuestras redes para no perderte ninguna promocion y conocer los ultimos ingresos</p>
     </div>
-        <a class="redes2" href="https://www.instagram.com">Instagram</a>
-        <a class="redes3" href="https://www.facebook.com">facebook</a>
+        <a class="redes2 fs-4 text-black" href="https://www.instagram.com " target="_blank">Instagram</a>
+        <a class="redes3 fs-4 text-black" href="https://www.facebook.com" target="_blank">facebook</a>
       <h3 class="medios-pago"> Medios de Pago</h3>
-        <p class="pago-visa">Visa</p>
-        <p class="pago-master">Master Card</p>
+        <p class="pago-visa fs-3">Visa</p>
+        <p class="pago-master fs-3">Master Card</p>
 </footer>
 <!--Fin del Footer-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 
 </html>
