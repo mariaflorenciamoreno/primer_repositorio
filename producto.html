@@ -4,83 +4,114 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
     <title>Ambos Sidd - Moreno Maria Florencia</title>
 </head>
-<body>
+<body   class="bg-success p-2 text-black bg-opacity-50 me-0">
   <header class="cabecera1">
-    <img class="logo" src="img/logo2.png" alt="logoAmbosSidd">
-    <!--Inicio del Nav-->
-    <nav id="nav">
-      <strong>
-      <ul>
-        <li class="menu"><a href="index.html">Inicio</a></li>
-        <li class="menu"><a href="producto.html">Productos</a></li>
-        <li class="menu"><a href="carrito.html">Carrito</a></li>
-        <li class="menu"><a href="nosotros.html">Nosotros</a></li>
-        <li class="menu"><a href="contacto.html">Contacto</a></li>
-      </ul>
-    </strong>
-    </nav>
+<!--Inicio del Nav-->
+  <nav class="navbar navbar-expand-lg colorFondo">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="./img/logo2.png" class="img-fluid" width="300px" height="200px" alt="Logo2"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-5 mr-0 fs-3 ColorLetra">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="producto.html">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="carrito.html">Carrito</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="nosotros.html">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+        <form class="d-flex ms-5" role="search">
+          <input class="form-control me-2" type="search"  aria-label="Search">
+          <button class="btn btn-outline-dark" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
     <!--Fin del Nav-->
 </header>
-    <hr>
-        <h2>Lo mas vendido</h2>
-     <!--Inician las imagenes-->
-       <div id="imgab">
-       <!--Imagen producto A-->
-       <input class="imgA" type="image" src="img/amboA.jpg" alt="">
-       <p>Producto A</p>
-       <br>
-       <!--imagen producto B-->
-       <input class="imgB" type="image" src="img/AmboB.jpg" alt="">
-       <p>Producto B</p>
-       <br>
-      </div>
-      <br><br>
-      <div id="imgcd">
-       <!--imagen producto C-->
-       <input class="imgC" type="image" src="img/amboC.jpg" alt="">
-       <p>Producto C</p>
-       <br>
-       <!--imagen producto D-->
-       <input class="imgD" type="image" src="img/amboD.jpg" alt="">
-       <p>Producto D</p>
-      </div>
-     <br>
-     <br>
+<main class="conteiner">
+  <div class="row">
+    <div class="lomas mt-5 mx-5 p-3 col-s-12 col-md-12 col-lg-12">
+      <h2>Lo mas vendido</h2>
     </div>
-     <!--Fin de las imagenes-->
-       <h3>Más Productos</h3>
-       <br>
-       <!--inicio de las nuevas imagenes-->
-       <div id="imgef">
-         <!--imagen producto E-->
-         <input class="imgE" type="image" src="img/amboE.jpg" alt="">
-         <p> Producto E</p>
-         <br>
-         <!--imagen producto F-->
-         <input class="imgF" type="image" src="img/amboF.jpg" alt="">
-         <p> Producto F</p>
-         <br>
+      <!--Inician las imagenes-->
+<!--        <div id="imgab"> -->         
+        <!--Imagen producto A-->
+        <div  class="col-s-12 col-md-6 col-md-6">
+        <input class="imgA" type="image" src="img/amboA.jpg" alt="">
+        <p class="p">Producto A</p>
         </div>
-        <br><br>
-        <div id="imggh">
-         <!--imagen producto G-->
-         <input class="imgG" type="image" src="img/amboG.jpg" alt="">
-         <p>Producto G</p>
-         <br>
-         <!--imagen producto H-->
-         <input class="imgH" type="image" src="img/amboH.jpg" alt="">
-         <p> Producto H </p>
+        <br>
+        <!--imagen producto B-->
+        <div class="col-s-12 col-md-6 col-md-6" >
+        <input class="imgB" type="image" src="img/AmboB.jpg" alt="">
+        <p class="p">Producto B</p>
+        <br>
         </div>
+<!--           <div id="imgcd"> -->
+        <div class="col-s-12 col-md-6 col-md-6">
+        <!--imagen producto C-->
+        <input class="imgC" type="image" src="img/amboC.jpg" alt="">
+        <p class="p">Producto C</p>
+        </div>
+        <br>
+        <!--imagen producto D-->
+        <div class="col-s-12 col-md-6 col-md-6">
+        <input class="imgD" type="image" src="img/amboD.jpg" alt="">
+        <p class="p">Producto D</p>
+        </div>
+  </div>
+        <!--Fin de las imagenes-->
+  <div class="row">
+        <div class="masProd mt-5 mx-5 p-3 col-s-12 col-md-12 col-lg-12">
+        <h3>Más Productos</h3>
+        </div>
+        <!--inicio de las nuevas imagenes-->
+<!--         <div id="imgef"> -->
+        <div class="col-s-12 col-md-6 col-md-6">
+        <!--imagen producto E-->
+        <input class="imgE" type="image" src="img/amboE.jpg" alt="">
+        <p class="p"> Producto E</p>
+        </div>
+        <div class="col-s-12 col-md-6 col-md-6">
+        <!--imagen producto F-->
+        <input class="imgF" type="image" src="img/amboF.jpg" alt="">
+        <p class="p"> Producto F</p>
+        </div>
+<!--         <div id="imggh" class=""> -->
+        <div class="col-s-12 col-md-6 col-md-6">
+        <!--imagen producto G-->
+        <input class="imgG" type="image" src="img/amboG.jpg" alt="">
+        <p class="p">Producto G</p>
+        </div>
+        <div class="col-s-12 col-md-6 col-md-6">
+        <!--imagen producto H-->
+        <input class="imgH" type="image" src="img/amboH.jpg" alt="">
+        <p class="p"> Producto H </p>
+        </div>
+  </div>
        <br>
        <br>
        <!--fin de las nuevas imagenes-->
-
+   </main>
 <br>
 <br>
 <br>
@@ -88,19 +119,20 @@
 <br>
 <!--inicio del footer-->
 <hr>
-<footer>
-  <div class="redes">
+<footer class="mr-5">
+  <div class="redes mt-4">
       <h3>Nuestras Redes</h3>
   </div> 
-    <div class="leyenda">   
-      <p>Seguinos en nuestras redes para no perderte ninguna promocion y conocer los ultimos ingresos</p>
+    <div class="leyenda ms-4">   
+      <p class="fs-2 mx-4 p-3">Seguinos en nuestras redes para no perderte ninguna promocion y conocer los ultimos ingresos</p>
     </div>
-        <a class="redes2" href="https://www.instagram.com">Instagram</a>
-        <a class="redes3" href="https://www.facebook.com">facebook</a>
+        <a class="redes2 fs-4 text-black" href="https://www.instagram.com " target="_blank">Instagram</a>
+        <a class="redes3 fs-4 text-black" href="https://www.facebook.com" target="_blank">facebook</a>
       <h3 class="medios-pago"> Medios de Pago</h3>
-        <p class="pago-visa">Visa</p>
-        <p class="pago-master">Master Card</p>
+        <p class="pago-visa fs-3">Visa</p>
+        <p class="pago-master fs-3">Master Card</p>
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 <!--fin del footer-->
 </body>
 </html>

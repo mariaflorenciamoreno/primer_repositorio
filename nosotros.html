@@ -4,57 +4,88 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
     <title>Ambos Sidd- Moreno Maria Florencia</title>
 </head>
-<body>
+<body   class="bg-success p-2 text-black bg-opacity-50 me-0">
   <header class="cabecera1">
-    <img class="logo" src="img/logo2.png" alt="logoAmbosSidd">
-    <!--Inicio del Nav-->
-    <nav id="nav">
-      <strong>
-      <ul>
-        <li class="menu"><a href="index.html">Inicio</a></li>
-        <li class="menu"><a href="producto.html">Productos</a></li>
-        <li class="menu"><a href="carrito.html">Carrito</a></li>
-        <li class="menu"><a href="nosotros.html">Nosotros</a></li>
-        <li class="menu"><a href="contacto.html">Contacto</a></li>
-      </ul>
-    </strong>
-    </nav>
+<!--Inicio del Nav-->
+  <nav class="navbar navbar-expand-lg colorFondo">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="./img/logo2.png" class="img-fluid" width="300px" height="200px" alt="Logo2"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-5 mr-0 fs-3 ColorLetra">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="producto.html">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="carrito.html">Carrito</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="nosotros.html">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+        <form class="d-flex ms-5" role="search">
+          <input class="form-control me-2" type="search"  aria-label="Search">
+          <button class="btn btn-outline-dark" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
     <!--Fin del Nav-->
 </header >
-      <hr>
+<main>
         <div class="nosotros-container">
-                <h2 class="about-us">Un poco de nosotros</h2>
-                <p class="par1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore similique eveniet quidem modi, labore reiciendis numquam. Iusto nobis suscipit a expedita quis deleniti architecto perspiciatis quas, voluptates, incidunt assumenda distinctio.</p>
-                <p class="par2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur molestiae animi soluta culpa ea, nihil magnam, maiores recusandae dolore, perspiciatis modi facere fuga eum quod repellat. Nihil repudiandae facilis necessitatibus.</p>
-                <p class="par3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore similique eveniet quidem modi, labore reiciendis numquam. Iusto nobis suscipit a expedita quis deleniti architecto perspiciatis quas, voluptates, incidunt assumenda distinctio.</p>
-                <p class="par4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur molestiae animi soluta culpa ea, nihil magnam, maiores recusandae dolore, perspiciatis modi facere fuga eum quod repellat. Nihil repudiandae facilis necessitatibus.</p>
-             <h3 class="ubicacion">Nuestra ubicacion</h3>
-             <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.2691326091144!2d-58.26437138337019!3d-34.72360992699424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32e6afaef3379%3A0x739f6ae761721b9d!2sBST!5e0!3m2!1ses!2sar!4v1653274118093!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                 <p class="direccion">Direccion:Hipoliro Yrigoyen 596</p>
-                 <p class="partido">Quilmes Oeste - Buenos Aires, Argentina</p>
-         </div>
-
- <hr>
+              <div class="sobre">
+                <h2 class="about-us mt-5 mb-5 ms-5 me-5 p-5">Un poco de nosotros</h2>
+              </div>
+              <div class="parrafos">
+                <p class="par1 mt-3 p-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus natus beatae libero, eum nihil maiores quisquam laboriosam, alias molestiae suscipit animi et fugiat dolorem voluptatibus deleniti consequuntur magnam earum maxime ipsa tempora harum accusantium reprehenderit. Accusantium aliquam labore officiis dignissimos eum incidunt aperiam voluptatem sit voluptatum earum in ducimus ipsum ullam culpa quo illum possimus odit, quis fuga porro eveniet quia veniam perferendis. Quasi quo nostrum qui quibusdam. Harum accusantium magni sapiente blanditiis culpa cumque earum, saepe aliquid reprehenderit explicabo laboriosam assumenda, fugit laborum recusandae minus magnam dolor vero? Vero reiciendis sed laudantium, unde ut quod provident placeat dolore fugit!</p>
+                <p class="par2 mt-0 p-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur molestiae animi soluta culpa ea, nihil magnam, maiores recusandae dolore, perspiciatis modi facere fuga eum quod repellat. Nihil repudiandae facilis necessitatibus.</p>
+                <p class="par3 mt-0 p-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore similique eveniet quidem modi, labore reiciendis numquam. Iusto nobis suscipit a expedita quis deleniti architecto perspiciatis quas, voluptates, incidunt assumenda distinctio.</p>
+                <p class="par4 mt-0 p-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur molestiae animi soluta culpa ea, nihil magnam, maiores recusandae dolore, perspiciatis modi facere fuga eum quod repellat. Nihil repudiandae facilis necessitatibus.</p>
+              </div>
+              <div class="nuestraUbi">
+                <h3 class="ubicacion mt-3 mb-3 ms-5 me-5 p-5">Nuestra ubicacion</h3>
+              </div>
+                <div class="ubic">
+                  <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.2691326091144!2d-58.26437138337019!3d-34.72360992699424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32e6afaef3379%3A0x739f6ae761721b9d!2sBST!5e0!3m2!1ses!2sar!4v1653274118093!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="direc">
+                    <p class="direccion ">Direccion:Hipoliro Yrigoyen 596</p>
+                    <p class="partido">Quilmes Oeste - Buenos Aires, Argentina</p>
+                    </div>
+                </div>
+        </div>
+</main>
+<hr>
   <!--inicia el footer-->
- <footer>
-  <div class="redes">
-      <h3>Nuestras Redes</h3>
-  </div> 
-    <div class="leyenda">   
-      <p>Seguinos en nuestras redes para no perderte ninguna promocion y conocer los ultimos ingresos</p>
-    </div>
-        <a class="redes2" href="https://www.instagram.com">Instagram</a>
-        <a class="redes3" href="https://www.facebook.com">facebook</a>
-    <h3 class="medios-pago"> Medios de Pago</h3>
-        <p class="pago-visa">Visa</p>
-        <p class="pago-master">Master Card</p>
-</footer>
+  <footer class="mr-5">
+    <div class="redes mt-4">
+        <h3>Nuestras Redes</h3>
+    </div> 
+      <div class="leyenda ms-4">   
+        <p class="fs-2 mx-4 p-3">Seguinos en nuestras redes para no perderte ninguna promocion y conocer los ultimos ingresos</p>
+      </div>
+          <a class="redes2 fs-4 text-black" href="https://www.instagram.com " target="_blank">Instagram</a>
+          <a class="redes3 fs-4 text-black" href="https://www.facebook.com" target="_blank">facebook</a>
+        <h3 class="medios-pago"> Medios de Pago</h3>
+          <p class="pago-visa fs-3">Visa</p>
+          <p class="pago-master fs-3">Master Card</p>
+  </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
    <!--fin del footer-->
 </body>
 </html>

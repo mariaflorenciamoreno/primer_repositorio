@@ -1,16 +1,15 @@
 /* inicia el css inicio-movil */
 @media screen and (max-width:480px){
     /* Inicia Css de la pagina de Inicio-movil*/
-    body{
+/*     body{
         background-color: rgb(210, 250, 210);
-        font-family: 'Amatic SC', cursive;
         font-size: 25px;
         color: black;
         padding: 0;
         margin-bottom:0;
-        } 
+        }  */
     /* inicia estilos del header */
-    header{
+/*     header{
         background-color: white;
         padding: auto;
         margin-top: -10px;
@@ -48,9 +47,9 @@
     .cuotas{
         width: 470px;
         height: 300px;
-    }
+    } */
     /* inicia Css Main-movil */
-    main{
+/*     main{
         display: grid;
         grid-template-columns:repeat(1, 1fr);
         grid-template-rows: 0.3fr 1fr 1fr 1fr 1fr;
@@ -94,10 +93,10 @@
     .img-4{
         width: 400px;
         height: 500px;
-    }
+    } */
 
     /* inicia css- footer-movil */
-    footer{
+ /*    footer{
         background-color: white;
         height: 500px;
         padding: 0;
@@ -181,9 +180,9 @@
         padding: 0;
         margin-top: -50px;
         margin-bottom: -50px;
-    }
+    } */
     /* inicia Css pagina Nosotros-movil */
-    .nosotros-container{
+/*     .nosotros-container{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(9, 1fr);
@@ -259,12 +258,12 @@
         display: flex;
         padding: 0;
         margin-top: -100px;
-}
+} */
 }
 
 @media screen and (min-width:481px) and (max-width: 1440px) {
 
-    .cabecera1{
+.cabecera1{
     margin-top:-6px;
     margin-right: -23px;
     margin-left: -6px;
@@ -371,6 +370,12 @@
 .conteiner{
     padding:10px;
 }
+.tituloPromo{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
 .promo-title{
     grid-area: promo-title;
 }
@@ -394,6 +399,7 @@
     grid-area: promo3;
 }
 .img-3{
+    margin-top: 30px;
     width: 70%;
     height: 80%;
 }
@@ -402,6 +408,7 @@
     grid-area: promo4;
 }
 .img-4{
+    margin-top: 30px;
     width: 70%;
     height: 80%;
 }
@@ -465,8 +472,7 @@ footer{
     grid-area: pago-master;
 }
 /* inicia Css de pagina Nosotros */
-.nosotros-container{
-    display: grid;
+/* .nosotros-container{
     grid-template-columns: repeat(2, 1fr);
     column-gap: 5px;
     grid-template-rows: repeat(8, 1fr);
@@ -482,11 +488,18 @@ footer{
     "mapa partido";
     justify-items: center;
     align-items: center;
+} */
+.sobre{
+    display: flex;
+    justify-content: center;
 }
 .about-us{
     grid-area: about-us;
     display: flex;
     justify-items: center;
+}
+.parrafos{
+    padding: 2px 20px 20px 20px;
 }
 .par1{
     grid-area: par1;
@@ -500,15 +513,31 @@ footer{
 .par4{
     grid-area: par4;
 }
+.nuestraUbi{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding-right: 10px;
+    padding-bottom: 20px ;
+}
 .ubicacion{
     grid-area: ubicacion;
     display: flex;
     justify-items: center;
 }
+.ubic{
+    display: flex;
+    justify-content: space-around;
+}
+.direc{
+    display: block;
+    justify-content: center;
+    margin-top: 70px;
+    margin-right: 50px;
+}
 .mapa{
     grid-area: mapa;
     display: flex;
-    justify-items: end;
 }
 .datos{
     grid-area: datos;
@@ -524,12 +553,85 @@ footer{
     justify-items: flex-start;
 }
 /* productos */
+.lomas{
+    display: flex;
+    justify-content: center;
+}
+.masProd{
+    display: flex;
+    justify-content: center;
+}
 #imgab, #imgcd, #imgef, #imggh{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    margin-left: 20px;
   
 }
 .imgA, .imgB, .imgC, .imgD,.imgE, .imgF, .imgG, .imgH{
     border: solid 2px palegreen;
 } 
+.imgA{
+    display: flex;
+    align-items: center;
+    margin-left: 150px;
+}
+.imgB{
+    display: flex;
+    align-items: center;
+    margin-left: 150px;
+}
+.imgC{
+    display: flex;
+    align-items: center;
+    margin-left: 150px;
+}
+.imgD{
+    display: flex;
+    align-items: center;
+    margin-left: 150px;
+}
+.imgE{
+    display: flex;
+    align-items: center;
+    margin-left: 150px;
+}
+.imgF{
+    display: flex;
+    align-items: center;
+    margin-left: 150px;
+}
+.imgG{
+    display: flex;
+    align-items: center;
+    margin-left: 150px;
+}
+.imgH{
+    display: flex;
+    align-items: center;
+    margin-left: 150px;
+}
+.p{
+    margin-left: 250px;
+}
+/* Inicia Css Carrito */
+.inicioCarrito{
+    display: flex;
+    justify-content: center;
+}
+/* Css Contactos */
+.escribinos{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.dudas{
+    display: flex;
+    justify-content: center;
+}
+.formulario{
+    display: flex;
+    justify-content: center;
+}
 }
