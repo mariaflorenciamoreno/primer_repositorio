@@ -375,6 +375,15 @@
     justify-content: center;
     margin-top: 10px;
     margin-bottom: 40px;
+    animation: cssAnimation_0 3000ms 6 ease-in-out 3000ms;
+}
+@keyframes cssAnimation_0 {
+    to {
+    font-size: 34px;
+    font-weight: bolder;
+    line-height: 1.2;
+    letter-spacing: 6px;
+    }
 }
 .promo-title{
     grid-area: promo-title;
@@ -385,16 +394,24 @@
 }
 .img-1{
     size: 300px 300px;
- }
-
+    transition: border 1022ms ease-out 239ms, border-radius 1022ms ease-out 239ms;
+}
+.img-1:hover {
+    border: 75px hidden rgba(100, 100, 100, 1);
+    border-radius: 44px;
+}
 .promo2{
     grid-area: promo2;
 }
 .img-2{
     width: 60%;
     height: 90%;
+    transition: border 1022ms ease-out 239ms, border-radius 1022ms ease-out 239ms;
 }
-
+.img-2:hover {
+    border: 75px hidden rgba(100, 100, 100, 1);
+    border-radius: 44px;
+}
 .promo3{
     grid-area: promo3;
 }
@@ -402,8 +419,12 @@
     margin-top: 30px;
     width: 70%;
     height: 80%;
+    transition: border 1022ms ease-out 239ms, border-radius 1022ms ease-out 239ms;
 }
-
+.img-3:hover {
+    border: 75px hidden rgba(100, 100, 100, 1);
+    border-radius: 44px;
+}
 .promo4{
     grid-area: promo4;
 }
@@ -411,8 +432,15 @@
     margin-top: 30px;
     width: 70%;
     height: 80%;
+    transition: border 1022ms ease-out 239ms, border-radius 1022ms ease-out 239ms;
 }
-
+.img-4:hover {
+    border: 75px hidden rgba(100, 100, 100, 1);
+    border-radius: 44px;
+}
+.p1{
+    margin-left: 200px;
+}
  /* inicia el css del footer */
 footer{
     background-color: white;
@@ -556,10 +584,28 @@ footer{
 .lomas{
     display: flex;
     justify-content: center;
+    animation: cssAnimation_0 3000ms 6 ease-in-out 3000ms;
+}
+@keyframes cssAnimation_0 {
+    to {
+    font-size: 34px;
+    font-weight: bolder;
+    line-height: 1.2;
+    letter-spacing: 6px;
+    }
 }
 .masProd{
     display: flex;
     justify-content: center;
+    animation: cssAnimation_0 3000ms 6 ease-in-out 3000ms;
+}
+@keyframes cssAnimation_0 {
+    to {
+    font-size: 34px;
+    font-weight: bolder;
+    line-height: 1.2;
+    letter-spacing: 6px;
+    }
 }
 #imgab, #imgcd, #imgef, #imggh{
     display: flex;
@@ -567,50 +613,89 @@ footer{
     align-items: center;
     margin-right: 20px;
     margin-left: 20px;
-  
 }
 .imgA, .imgB, .imgC, .imgD,.imgE, .imgF, .imgG, .imgH{
-    border: solid 2px palegreen;
+    border: solid 2px rgb(145, 89, 172);
 } 
 .imgA{
     display: flex;
     align-items: center;
     margin-left: 150px;
+    transition: border 1022ms ease-out 239ms, border-radius 1022ms ease-out 239ms;
+}
+.imgA:hover {
+    border: 75px hidden rgba(100, 100, 100, 1);
+    border-radius: 44px;
 }
 .imgB{
     display: flex;
     align-items: center;
     margin-left: 150px;
+    transition: border 1022ms ease-out 239ms, border-radius 1022ms ease-out 239ms;
+}
+.imgB:hover {
+    border: 75px hidden rgba(100, 100, 100, 1);
+    border-radius: 44px;
 }
 .imgC{
     display: flex;
     align-items: center;
     margin-left: 150px;
+    transition: border 1022ms ease-out 239ms, border-radius 1022ms ease-out 239ms;
+}
+.imgC:hover {
+    border: 75px hidden rgba(100, 100, 100, 1);
+    border-radius: 44px;
 }
 .imgD{
     display: flex;
     align-items: center;
     margin-left: 150px;
+    transition: border 1022ms ease-out 239ms, border-radius 1022ms ease-out 239ms;
+}
+.imgD:hover {
+    border: 75px hidden rgba(100, 100, 100, 1);
+    border-radius: 44px;
 }
 .imgE{
     display: flex;
     align-items: center;
     margin-left: 150px;
+    transition: border 1022ms ease-out 239ms, border-radius 1022ms ease-out 239ms;
+}
+.imgE:hover {
+    border: 75px hidden rgba(100, 100, 100, 1);
+    border-radius: 44px;
 }
 .imgF{
     display: flex;
     align-items: center;
     margin-left: 150px;
+    transition: border 1022ms ease-out 239ms, border-radius 1022ms ease-out 239ms;
+}
+.imgF:hover {
+    border: 75px hidden rgba(100, 100, 100, 1);
+    border-radius: 44px;
 }
 .imgG{
     display: flex;
     align-items: center;
     margin-left: 150px;
+    transition: border 1022ms ease-out 239ms, border-radius 1022ms ease-out 239ms;
+}
+.imgG:hover {
+    border: 75px hidden rgba(100, 100, 100, 1);
+    border-radius: 44px;
 }
 .imgH{
     display: flex;
     align-items: center;
     margin-left: 150px;
+    transition: border 1022ms ease-out 239ms, border-radius 1022ms ease-out 239ms;
+}
+.imgH:hover {
+    border: 75px hidden rgba(100, 100, 100, 1);
+    border-radius: 44px;
 }
 .p{
     margin-left: 250px;
@@ -625,6 +710,15 @@ footer{
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
+    animation: cssAnimation_0 3000ms 6 ease-in-out 3000ms;
+}
+@keyframes cssAnimation_0 {
+    to {
+    font-size: 34px;
+    font-weight: bolder;
+    line-height: 1.2;
+    letter-spacing: 6px;
+    }
 }
 .dudas{
     display: flex;
