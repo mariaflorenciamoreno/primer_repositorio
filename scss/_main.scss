@@ -1,0 +1,61 @@
+.conteiner{
+    padding: 10px;
+    .tituloPromo{
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        margin-bottom: 40px;
+    }
+    .promo1{
+        justify-items: center;
+        margin: 2px auto;
+        .img-1{
+            size: 300px 300px;
+            transition: border 1022ms ease-out 239ms, border-radius 1022ms ease-out 239ms;
+            &:hover{
+                border: 75px hidden rgba(100, 100, 100, 1);
+                border-radius: 44px;
+            }
+        }
+    }
+    .promo2{
+        justify-items: center;
+        .img-2{
+            width: 60%;
+            height: 90%;
+            transition: border 1022ms ease-out 239ms, border-radius 1022ms ease-out 239ms;
+            &:hover{
+                border: 75px hidden rgba(100, 100, 100, 1);
+                border-radius: 44px;
+            }
+        }   
+    }
+    .promo3{
+        justify-items: center;
+        .img-3{
+            width: 70%;
+            height: 80%;
+            transition: border 1022ms ease-out 239ms, border-radius 1022ms ease-out 239ms;
+            &:hover{
+                border: 75px hidden rgba(100, 100, 100, 1);
+                border-radius: 44px;
+            }
+        }
+    }
+    .promo4{
+        justify-items: center;
+        .img-4{
+            width: 70%;
+            height: 80%;
+            transition: border 1022ms ease-out 239ms, border-radius 1022ms ease-out 239ms;
+            &:hover{
+                border: 75px hidden rgba(100, 100, 100, 1);
+                border-radius: 44px; 
+            }
+        }
+    }
+    .p1{
+        margin-left: 200px;
+        font-size: 20px;
+}
+}

@@ -1,0 +1,65 @@
+footer{
+    background-color: white;
+    height: 450px;
+    padding-top: auto;
+    margin-top: -20px;
+    margin-right: -23px;
+    margin-bottom: -6px;
+    margin-left: -6px;
+    .redes{
+        display: flex;
+        padding-left: 0px;
+        margin-top: 10px;
+        margin-right: 10px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        justify-content: center;
+        h3{
+            font-size: 30px;
+            margin-top: 10px;
+        }
+    }
+    .leyenda{
+        display: flex;
+        justify-content: center;
+        p{
+            font-size: 25px;
+
+        }
+    }
+    .redesfooter{
+        display: flex;
+        justify-content: space-around;
+        .redes2{
+            list-style-type: none;
+            text-decoration: none;
+            justify-items: center;
+            font-size: 25px;
+        }
+        .redes3{
+            list-style-type: none;
+            text-decoration: none;
+            justify-items: center;
+            font-size: 25px;
+        }
+    }
+    .tit-pagos{
+        display: flex;
+        justify-content: center;
+        .medios-pago{
+            font-size: 30px;
+        }
+    }
+    .tarjetas{
+        display: flex;
+        justify-content:space-evenly ;
+        font-size: 20px;
+        font
+        .pago-visa{
+            font-size: 22px;
+        }
+        .pago-master{
+            font-size: 22px;
+        }
+    }
+}

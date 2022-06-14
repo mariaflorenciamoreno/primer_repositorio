@@ -1,0 +1,142 @@
+/* Estilos de pagina Index */
+body {
+  background-color: #d39adf; }
+
+header {
+  background-color: white;
+  padding: auto;
+  display: flex;
+  position: absolute;
+  width: 100%;
+  margin-top: 0;
+  margin-left: 0; }
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    font-size: 23px;
+    text-align: center;
+    text-indent: 30px;
+    list-style-type: none;
+    margin-right: -23px; }
+    header nav .logo {
+      width: 280px;
+      display: flex;
+      position: flex-start;
+      margin-right: -5px;
+      margin-left: -6px;
+      padding: 0; }
+      header nav .logo ul {
+        text-decoration: none; }
+        header nav .logo ul li {
+          display: flex;
+          list-style-type: none; }
+          header nav .logo ul li .nav-link {
+            text-decoration: none;
+            color: black;
+            display: flex;
+            padding: 0px;
+            margin-left: -5px;
+            top: 0px; }
+
+.cuotas {
+  width: 100%;
+  margin-top: 190px; }
+
+.conteiner {
+  padding: 10px; }
+  .conteiner .tituloPromo {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 40px; }
+  .conteiner .promo1 {
+    justify-items: center;
+    margin: 2px auto; }
+    .conteiner .promo1 .img-1 {
+      size: 300px 300px;
+      transition: border 1022ms ease-out 239ms, border-radius 1022ms ease-out 239ms; }
+      .conteiner .promo1 .img-1:hover {
+        border: 75px hidden #646464;
+        border-radius: 44px; }
+  .conteiner .promo2 {
+    justify-items: center; }
+    .conteiner .promo2 .img-2 {
+      width: 60%;
+      height: 90%;
+      transition: border 1022ms ease-out 239ms, border-radius 1022ms ease-out 239ms; }
+      .conteiner .promo2 .img-2:hover {
+        border: 75px hidden #646464;
+        border-radius: 44px; }
+  .conteiner .promo3 {
+    justify-items: center; }
+    .conteiner .promo3 .img-3 {
+      width: 70%;
+      height: 80%;
+      transition: border 1022ms ease-out 239ms, border-radius 1022ms ease-out 239ms; }
+      .conteiner .promo3 .img-3:hover {
+        border: 75px hidden #646464;
+        border-radius: 44px; }
+  .conteiner .promo4 {
+    justify-items: center; }
+    .conteiner .promo4 .img-4 {
+      width: 70%;
+      height: 80%;
+      transition: border 1022ms ease-out 239ms, border-radius 1022ms ease-out 239ms; }
+      .conteiner .promo4 .img-4:hover {
+        border: 75px hidden #646464;
+        border-radius: 44px; }
+  .conteiner .p1 {
+    margin-left: 200px;
+    font-size: 20px; }
+
+footer {
+  background-color: white;
+  height: 450px;
+  padding-top: auto;
+  margin-top: -20px;
+  margin-right: -23px;
+  margin-bottom: -6px;
+  margin-left: -6px; }
+  footer .redes {
+    display: flex;
+    padding-left: 0px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    justify-content: center; }
+    footer .redes h3 {
+      font-size: 30px;
+      margin-top: 10px; }
+  footer .leyenda {
+    display: flex;
+    justify-content: center; }
+    footer .leyenda p {
+      font-size: 25px; }
+  footer .redesfooter {
+    display: flex;
+    justify-content: space-around; }
+    footer .redesfooter .redes2 {
+      list-style-type: none;
+      text-decoration: none;
+      justify-items: center;
+      font-size: 25px; }
+    footer .redesfooter .redes3 {
+      list-style-type: none;
+      text-decoration: none;
+      justify-items: center;
+      font-size: 25px; }
+  footer .tit-pagos {
+    display: flex;
+    justify-content: center; }
+    footer .tit-pagos .medios-pago {
+      font-size: 30px; }
+  footer .tarjetas {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 20px; }
+    footer .tarjetas font
+.pago-visa {
+      font-size: 22px; }
+    footer .tarjetas .pago-master {
+      font-size: 22px; }
