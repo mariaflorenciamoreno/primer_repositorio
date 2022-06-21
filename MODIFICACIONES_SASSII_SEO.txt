@@ -1,0 +1,82 @@
+KEYWORDS
+
+Se agrega <meta name="keywords" content="ambos uniformes salud chaquetas guardapolvos cofias spandex ambo uniforme cofia"> en paginas:
+
+*Index.html
+*Contacto.html
+*Producto.html
+*Carrito.html
+*Nosotros.html
+
+DESCRIPTIONS
+
+Se agrega en pagina:
+- Index.html:
+<meta name="description" content="Ambos de diseño para profesionales de la salud. Nuestra calidad y la comodidad de nuestros ambos marcan la diferencia. Envíos a todo el país. Compra Online en 3 y 6 Cuotas sin interes.">
+
+- Contacto.html:
+<meta name="description" content="Si tenes alguna duda o consulta sobre nuestros productos, dejanos tus datos así nos contactamos a la brevedad.">
+
+- Producto.html:
+<meta name="description" content="Conocé todo lo que tenemos en stock y más.">
+
+- Nosotros.html:
+<meta name="description" content="Conocé un poco de nosotros, nuestra historia y como comenzó nuestro amor por los ambos de diseño.">
+
+- Carrito.html:
+<meta name="description" content="Carrito de compras.">
+
+
+Se aplica EXTEND y MIXIN en el parcial "_footer.scss" de la pagina index.html:
+
+EXTEND
+	.flexycent{
+		display: flex;
+		justify-items: center;
+	}
+	.redes{
+		@extend .flexycent;
+	}
+	
+	.leyenda{
+		@extend .flexycent;
+	}
+
+	.tit-pagos{
+		@extend .flexycent;
+	}
+MIXIN
+	@mixin justify($display,$justify) {
+    		display: $display;
+   		justify-content: $justify;
+	}
+
+	.redesfooter{
+       		@include justify(flex,space-around);
+        }
+	.tarjetas{
+		@include justify(flex,space-evenly);
+	}
+
+Se aplica MIXIN en el parcial "_main.scss" de la pagina index.html:
+
+	@mixin sizes ($width, $heigth){
+		width:$width;
+		heigth$heigth;
+	}
+
+	.promo1{
+		@include sizes(400px, 400px);
+	}
+
+	.promo2{
+		@include size(60%,90%);
+	}
+
+	.promo3{
+		@include size(70%,80%);
+	}
+
+	.promo4{
+		@include size(70%,80%);
+	}

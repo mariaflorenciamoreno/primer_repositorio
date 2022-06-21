@@ -1,3 +1,7 @@
+@mixin sizes($width, $heigth) {
+    width: $width;
+    height: $heigth;
+}
 .conteiner{
     padding: 10px;
     .tituloPromo{
@@ -10,7 +14,7 @@
         justify-items: center;
         margin: 2px auto;
         .img-1{
-            size: 300px 300px;
+            @include sizes(400px,400px);
             transition: border 1022ms ease-out 239ms, border-radius 1022ms ease-out 239ms;
             &:hover{
                 border: 75px hidden rgba(100, 100, 100, 1);
@@ -21,8 +25,7 @@
     .promo2{
         justify-items: center;
         .img-2{
-            width: 60%;
-            height: 90%;
+            @include sizes(60%,90%);
             transition: border 1022ms ease-out 239ms, border-radius 1022ms ease-out 239ms;
             &:hover{
                 border: 75px hidden rgba(100, 100, 100, 1);
@@ -33,8 +36,7 @@
     .promo3{
         justify-items: center;
         .img-3{
-            width: 70%;
-            height: 80%;
+            @include sizes(70%,80%);
             transition: border 1022ms ease-out 239ms, border-radius 1022ms ease-out 239ms;
             &:hover{
                 border: 75px hidden rgba(100, 100, 100, 1);
@@ -45,8 +47,7 @@
     .promo4{
         justify-items: center;
         .img-4{
-            width: 70%;
-            height: 80%;
+            @include sizes(70%,80%);
             transition: border 1022ms ease-out 239ms, border-radius 1022ms ease-out 239ms;
             &:hover{
                 border: 75px hidden rgba(100, 100, 100, 1);

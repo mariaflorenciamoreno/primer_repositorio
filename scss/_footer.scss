@@ -1,3 +1,11 @@
+.flexycent{
+    display: flex;
+    justify-content: center;
+}
+@mixin justify($display,$justify) {
+    display: $display;
+    justify-content: $justify;
+}
 footer{
     background-color: white;
     height: 450px;
@@ -7,29 +15,26 @@ footer{
     margin-bottom: -6px;
     margin-left: -6px;
     .redes{
-        display: flex;
+        @extend .flexycent;
         padding-left: 0px;
         margin-top: 10px;
         margin-right: 10px;
         margin-bottom: 0px;
         margin-left: 0px;
-        justify-content: center;
         h3{
             font-size: 30px;
             margin-top: 10px;
         }
     }
     .leyenda{
-        display: flex;
-        justify-content: center;
+        @extend .flexycent;
         p{
             font-size: 25px;
 
         }
     }
     .redesfooter{
-        display: flex;
-        justify-content: space-around;
+        @include justify(flex,space-around);
         .redes2{
             list-style-type: none;
             text-decoration: none;
@@ -44,15 +49,13 @@ footer{
         }
     }
     .tit-pagos{
-        display: flex;
-        justify-content: center;
+        @extend .flexycent;
         .medios-pago{
             font-size: 30px;
         }
     }
     .tarjetas{
-        display: flex;
-        justify-content:space-evenly ;
+        @include justify(flex,space-evenly);
         font-size: 20px;
         font
         .pago-visa{

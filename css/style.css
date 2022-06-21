@@ -53,7 +53,8 @@ header {
     justify-items: center;
     margin: 2px auto; }
     .conteiner .promo1 .img-1 {
-      size: 300px 300px;
+      width: 400px;
+      height: 400px;
       transition: border 1022ms ease-out 239ms, border-radius 1022ms ease-out 239ms; }
       .conteiner .promo1 .img-1:hover {
         border: 75px hidden #646464;
@@ -89,6 +90,10 @@ header {
     margin-left: 200px;
     font-size: 20px; }
 
+.flexycent, footer .redes, footer .leyenda, footer .tit-pagos {
+  display: flex;
+  justify-content: center; }
+
 footer {
   background-color: white;
   height: 450px;
@@ -98,21 +103,16 @@ footer {
   margin-bottom: -6px;
   margin-left: -6px; }
   footer .redes {
-    display: flex;
     padding-left: 0px;
     margin-top: 10px;
     margin-right: 10px;
     margin-bottom: 0px;
-    margin-left: 0px;
-    justify-content: center; }
+    margin-left: 0px; }
     footer .redes h3 {
       font-size: 30px;
       margin-top: 10px; }
-  footer .leyenda {
-    display: flex;
-    justify-content: center; }
-    footer .leyenda p {
-      font-size: 25px; }
+  footer .leyenda p {
+    font-size: 25px; }
   footer .redesfooter {
     display: flex;
     justify-content: space-around; }
@@ -126,17 +126,13 @@ footer {
       text-decoration: none;
       justify-items: center;
       font-size: 25px; }
-  footer .tit-pagos {
-    display: flex;
-    justify-content: center; }
-    footer .tit-pagos .medios-pago {
-      font-size: 30px; }
+  footer .tit-pagos .medios-pago {
+    font-size: 30px; }
   footer .tarjetas {
     display: flex;
     justify-content: space-evenly;
     font-size: 20px; }
-    footer .tarjetas font
-.pago-visa {
+    footer .tarjetas font .pago-visa {
       font-size: 22px; }
     footer .tarjetas .pago-master {
       font-size: 22px; }
