@@ -13,19 +13,23 @@ DESCRIPTIONS
 Se agrega en pagina:
 - Index.html:
 <meta name="description" content="Ambos de diseño para profesionales de la salud. Nuestra calidad y la comodidad de nuestros ambos marcan la diferencia. Envíos a todo el país. Compra Online en 3 y 6 Cuotas sin interes.">
+<title>Ambos Sidd- Inicio</title>
 
 - Contacto.html:
 <meta name="description" content="Si tenes alguna duda o consulta sobre nuestros productos, dejanos tus datos así nos contactamos a la brevedad.">
+<title>Ambos Sidd- Contacto</title>
 
 - Producto.html:
 <meta name="description" content="Conocé todo lo que tenemos en stock y más.">
+<title>Ambos Sidd - Producto</title>
 
 - Nosotros.html:
 <meta name="description" content="Conocé un poco de nosotros, nuestra historia y como comenzó nuestro amor por los ambos de diseño.">
+<title>Ambos Sidd- Nosotros</title>
 
 - Carrito.html:
 <meta name="description" content="Carrito de compras.">
-
+<title>Ambos Sidd - Carrito</title>
 
 Se aplica EXTEND y MIXIN en el parcial "_footer.scss" de la pagina index.html:
 
