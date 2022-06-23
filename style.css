@@ -1,7 +1,7 @@
 /* inicia el css inicio-movil */
-@media screen and (max-width:480px){
+@media screen and (max-width:767px){
     /* Inicia Css de la pagina de Inicio-movil*/
-/*     body{
+     body{
         background-color: rgb(210, 250, 210);
         font-size: 25px;
         color: black;
@@ -9,7 +9,7 @@
         margin-bottom:0;
         }  */
     /* inicia estilos del header */
-/*     header{
+     header{
         background-color: white;
         padding: auto;
         margin-top: -10px;
@@ -49,7 +49,7 @@
         height: 300px;
     } */
     /* inicia Css Main-movil */
-/*     main{
+   main{
         display: grid;
         grid-template-columns:repeat(1, 1fr);
         grid-template-rows: 0.3fr 1fr 1fr 1fr 1fr;
@@ -93,10 +93,10 @@
     .img-4{
         width: 400px;
         height: 500px;
-    } */
+    } 
 
     /* inicia css- footer-movil */
- /*    footer{
+   footer{
         background-color: white;
         height: 500px;
         padding: 0;
@@ -180,9 +180,9 @@
         padding: 0;
         margin-top: -50px;
         margin-bottom: -50px;
-    } */
+    } 
     /* inicia Css pagina Nosotros-movil */
-/*     .nosotros-container{
+    .nosotros-container{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(9, 1fr);
@@ -258,10 +258,10 @@
         display: flex;
         padding: 0;
         margin-top: -100px;
-} */
+} 
 }
 
-@media screen and (min-width:481px) and (max-width: 1440px) {
+@media screen and (min-width:769px) and (max-width: 1440px) {
 .body1{
     background-color: palevioletred;
 }

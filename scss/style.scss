@@ -1,9 +1,288 @@
-/* Estilos de pagina Index */
+$bg-rosa:palevioletred;
+$bg-verde: rgb(210, 250, 210);
+$bg-blanco:white;
+@media screen and (max-width:768px){
+    body{
+        background-color: $bg-verde;
+    }
+    header{
+        background-color: $bg-blanco;
+        padding: auto;
+        margin-top: -10px;
+        margin-right: -15px;
+        margin-bottom: -10px;
+        margin-left: -6px;
+}
+.cabecera1{
+    background-color: white;
+    display:flex;
+    justify-items: space-between;
+        nav{
+            list-style-type: none;
+            text-decoration: none;
+            color: black;
+            grid-area: nav;
+                .logo{
+                    width: 50%;
+                    display: flex;
+                        ul{
+                            text-decoration: none;
+                                li{
+                                    display: flex;
+                                    list-style-type: none;
+                                         .nav-link{
+                                            text-decoration: none;
+                                            color: black;
+                                            display: flex;
+                                            padding: 0px;
+                                            margin-left: -5px;
+                                            top: 0px;
+                                        }
+                                }
+                        }
+                }
+        }
+}
+.cuotas{
+    width: 100%;
+    margin-top: 12px;
+    margin-bottom: 0;
+}
+.conteiner{
+     display: grid;
+     grid-template-columns:repeat(1, 1fr);
+     grid-template-rows: 0.3fr 1fr 1fr 1fr 1fr;
+     grid-template-areas:
+     "promo-title"
+     "promo1"
+     "promo2"
+     "promo3"
+     "promo4";
+     align-items: center;
+     justify-items: center;
+     margin-top: -20px;
+     margin-bottom: -20px;
+        .promo-title{
+            grid-area: promo-title;
+            display: flex;
+            justify-content: center;
+            margin-top: -50px;
+            margin-bottom: -30px;
+        }
+        .promo1{
+            grid-area: promo1;
+              .img-1{
+                display: flex;
+                justify-content: center;
+                 width: 400px;
+                 height: 500px;
+                 margin-top: 0px;
+                 margin-left: 500px;
+              }
+        }
+        .promo2{
+            grid-area: promo2;
+               .img-2{
+                   width: 400px;
+                   height: 300px;
+               }
+        }
+        .promo3{
+            grid-area: promo3;
+                .img-3{
+                    width: 400px;
+                    height: 300px;
+                }
+        }
+        .promo4{
+            grid-area: promo4;
+                .img-4{
+                    width: 400px;
+                    height: 400px;
+                    display: flex;
+                    justify-content: center;
+                }
+        }
+        .p1{
+            margin-left: 200px;
+            font-size: 20px;
+    }
+}
+footer{
+     background-color: white;
+     height: 300px;
+     padding: 0;
+     margin-top: -13px;
+     margin-right: -15px;
+     margin-bottom: -10px;
+     margin-left: -6px;
+        .redes{
+            display: flex;
+            padding-left: auto;
+            font-size: 20px;
+           margin-right: 10px;
+            margin-top: -3px;
+            margin-left: 0px;
+            margin-bottom: -20px;
+            justify-content: center;
+               h3{
+                 font-size: 20px;
+                 margin-top: 10px;
+               }
+        }
+        .leyenda{
+            display: flex;
+            justify-content: center;
+                p{
+                  font-size: 18px;
+                  grid-area: leyenda;
+                  justify-content: center;
+                  align-items: flex-start;
+                }
+        }
+        .redesfooter{
+            display: flex;
+            justify-content: space-around;
+               .redes2{
+                   grid-area: redes2;
+                   font-size: 20px;
+                   list-style-type: none;
+                   text-decoration: none;
+                   justify-items: center;
+                   padding: 0;
+                   margin-top: -6px;
+                   margin-bottom: -10px;
+                      &:hover{
+                       color: palevioletred;
+                      }
+               }
+                .redes3{
+                    grid-area: redes3;
+                    font-size: 20px;
+                    list-style-type: none;
+                    text-decoration: none;
+                    justify-items: center;
+                    padding: 0;
+                    margin-top: -6px;
+                    margin-bottom: -10px;
+                         &:hover{
+                             color:palevioletred
+                         }
+                 }
+        }
+.tit-pagos{
+    display: flex;
+    justify-content: center;
+    .medios-pago{
+        grid-area: medios-pago;
+        padding: 0;
+        margin-top: 20px;
+        margin-bottom: -10px;
+    }
+}
+.tarjetas{
+    display: flex;
+    justify-content: space-evenly;
+        .pago-visa{
+            grid-area: pago-visa;
+            padding: 0;
+            margin-top: 50px;
+            margin-bottom: -10px;
+        }
+        .pago-master{
+            grid-area: pago-master;
+            padding: 0;
+            margin-top: 50px;
+            margin-bottom: -50px;
+        } 
+    }
+}
+.nosotros-container{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-areas:
+    "about-us"
+    "par1"
+    "par2"
+    "par3"
+    "par4"
+    "ubicacion"
+    "mapa"
+    "direccion"
+    "partido";
+    justify-items: center;
+    align-items: center;
+}
+.about-us{
+    grid-area: about-us;
+    display: flex;
+    justify-items: center;
+    padding: 0;
+    margin-top: -100px;
+    margin-bottom: -100px;
+}
+.par1{
+    grid-area: par1;
+    padding: 0;
+    margin-top: -110px;
+
+}
+.par2{
+    grid-area: par2;
+    padding: 0;
+    margin-top: -110px;
+
+}
+.par3{
+    grid-area: par3;
+    padding: 0;
+    margin-top: -110px;
+}
+.par4{
+    grid-area: par4;
+    margin-top: -110px;
+
+}
+.ubicacion{
+    grid-area: ubicacion;
+    display: flex;
+    justify-items: center;
+    margin-top: -110px;
+}
+.mapa{
+    grid-area: mapa;
+    display: flex;
+    justify-items: center;
+    padding: 0;
+    margin-top: -110px;
+}
+.datos{
+    grid-area: datos;
+    margin-top: -110px;
+    margin-bottom: -50px;
+
+}
+.direccion{
+    grid-area: direccion;
+    display: flex;
+    margin-top: -100px;
+}
+.partido{
+    grid-area: partido;
+    display: flex;
+    padding: 0;
+    margin-top: -100px;
+} 
+
+}
+
+
+@media screen and (min-width:769px) and (max-width: 1440px){
 body{
-    background-color: #d39adf;
+    background-color: $bg-verde;
 }
 @import "header";
-
 .cuotas{
     width: 100%;
     margin-top: 190px;
@@ -11,3 +290,12 @@ body{
 @import "main";
 
 @import "footer";
+@import "producto";
+@import "nosotros";
+@import "contacto";
+.inicioCarrito{
+    margin-top: 250px;
+    display: flex;
+    justify-content: center;
+}
+}
