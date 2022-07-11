@@ -3,11 +3,14 @@ $bg-verde: rgb(210, 250, 210);
 $bg-blanco:white;
 @media screen and (max-width:768px){
     body{
+        font-family: 'Gloria Hallelujah', cursive;
         background-color: $bg-verde;
+        height: 80%;
     }
     header{
         background-color: $bg-blanco;
         padding: auto;
+        font-size: 1rem;
         margin-top: -10px;
         margin-right: -15px;
         margin-bottom: -10px;
@@ -45,13 +48,13 @@ $bg-blanco:white;
 }
 .cuotas{
     width: 100%;
-    margin-top: 12px;
+    margin-top: 20px;
     margin-bottom: 0;
 }
-.conteiner{
+.conteiner1{
      display: grid;
      grid-template-columns:repeat(1, 1fr);
-     grid-template-rows: 0.3fr 1fr 1fr 1fr 1fr;
+     grid-template-rows: 0.4fr 1fr 1fr;
      grid-template-areas:
      "promo-title"
      "promo1"
@@ -60,65 +63,116 @@ $bg-blanco:white;
      "promo4";
      align-items: center;
      justify-items: center;
-     margin-top: -20px;
-     margin-bottom: -20px;
         .promo-title{
             grid-area: promo-title;
             display: flex;
             justify-content: center;
-            margin-top: -50px;
-            margin-bottom: -30px;
-        }
+            margin-top: -180px;
+            }
         .promo1{
             grid-area: promo1;
               .img-1{
                 display: flex;
                 justify-content: center;
-                 width: 400px;
-                 height: 500px;
-                 margin-top: 0px;
-                 margin-left: 500px;
-              }
+                margin-top:-280px;
+                margin-bottom: 20px;
+                }
+                .p1{
+                    display: flex;
+                    justify-content: center;
+                    
+                    font-size: 20px;
+                }
+                .btn{
+                    display: flex;
+                    justify-content: center;
+                    padding-top: 10px;
+                    margin-top: 15px;
+                    margin-bottom: 20px;
+                }
         }
         .promo2{
             grid-area: promo2;
                .img-2{
-                   width: 400px;
-                   height: 300px;
+                display: flex;
+                justify-content: center;
+                margin-bottom: 20px;
                }
+               .p1{
+                display: flex;
+                justify-content: center;
+                
+                font-size: 20px;
+            }
+               .btn{
+                display: flex;
+                justify-content: center;
+                padding-top: 10px;
+                margin-top: 15px;
+                margin-bottom: 20px;
+            }
         }
         .promo3{
             grid-area: promo3;
                 .img-3{
-                    width: 400px;
-                    height: 300px;
+                    display: flex;
+                    justify-content: center;
+                    margin-bottom: 20px;
+                }
+                .p1{
+                    display: flex;
+                    justify-content: center;
+                    
+                    font-size: 20px;
+                }
+                .btn{
+                    display: flex;
+                    justify-content: center;
+                    padding-top: 10px;
+                    margin-top: 15px;
+                    margin-bottom: 20px;
                 }
         }
         .promo4{
             grid-area: promo4;
                 .img-4{
-                    width: 400px;
-                    height: 400px;
                     display: flex;
                     justify-content: center;
+                    margin-bottom: 20px;
+                }
+                .p1{
+                    display: flex;
+                    justify-content: center;
+                    
+                    font-size: 20px;
+                }
+                .btn{
+                    display: flex;
+                    justify-content: center;
+                    padding-top: 10px;
+                    margin-top: 15px;
+                    margin-bottom: -40rem;
                 }
         }
         .p1{
-            margin-left: 200px;
+            display: flex;
+            justify-content: center;
+            
             font-size: 20px;
     }
 }
 footer{
      background-color: white;
-     height: 300px;
-     padding: 0;
-     margin-top: -13px;
+     height: 500px;
+     padding: 30px;
+     margin-top: -500px;
      margin-right: -15px;
      margin-bottom: -10px;
      margin-left: -6px;
         .redes{
             display: flex;
             padding-left: auto;
+            padding-bottom: 20px;
             font-size: 20px;
            margin-right: 10px;
             margin-top: -3px;
@@ -133,6 +187,7 @@ footer{
         .leyenda{
             display: flex;
             justify-content: center;
+            padding-bottom: 20px;
                 p{
                   font-size: 18px;
                   grid-area: leyenda;
@@ -143,6 +198,7 @@ footer{
         .redesfooter{
             display: flex;
             justify-content: space-around;
+            padding-bottom: 30px;
                .redes2{
                    grid-area: redes2;
                    font-size: 20px;
@@ -198,83 +254,168 @@ footer{
     }
 }
 .nosotros-container{
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(9, 1fr);
-    grid-template-areas:
-    "about-us"
-    "par1"
-    "par2"
-    "par3"
-    "par4"
-    "ubicacion"
-    "mapa"
-    "direccion"
-    "partido";
-    justify-items: center;
+    display: block;
     align-items: center;
+    margin-bottom: 20rem;
 }
-.about-us{
-    grid-area: about-us;
+.sobre{
+    grid-area: sobre;
     display: flex;
-    justify-items: center;
-    padding: 0;
-    margin-top: -100px;
-    margin-bottom: -100px;
+    justify-content: center;
+    margin-top: 1rem;
+    .about-us{
+        grid-area: about-us;
+        display: flex;
+        justify-items: center;
+        margin-top: 20px;
+    }
 }
-.par1{
-    grid-area: par1;
-    padding: 0;
-    margin-top: -110px;
-
-}
-.par2{
-    grid-area: par2;
-    padding: 0;
-    margin-top: -110px;
-
-}
-.par3{
-    grid-area: par3;
-    padding: 0;
-    margin-top: -110px;
-}
-.par4{
-    grid-area: par4;
-    margin-top: -110px;
-
-}
-.ubicacion{
-    grid-area: ubicacion;
+.sobreNos{
+    grid-area: sobreNos;
     display: flex;
-    justify-items: center;
-    margin-top: -110px;
+    justify-content: center;
+    .img-nos{
+        display: flex;
+        justify-content: center;
+        width: 90%;
+        margin-top: 30px;
+    }
 }
-.mapa{
+.nuestrasUbi{
+    grid-area: nuestraUbi;
+    display: flex;
+    justify-content: center;
+    .ubicacion{
+        grid-area: ubicacion;
+        display: flex;
+        justify-items: center;
+        margin-top: 1rem;
+        }
+}
+.ubic{
+    grid-area: ubic;
+    display: flex;
+    justify-content: center;
+    .mapa{
     grid-area: mapa;
     display: flex;
     justify-items: center;
     padding: 0;
-    margin-top: -110px;
-}
-.datos{
+    margin-top:1rem ;
+    margin-bottom: 15rem;
+    width: 50%;
+    height: 50%;
+    }
+    .direc{
     grid-area: datos;
-    margin-top: -110px;
+    margin-top: 1rem;
     margin-bottom: -50px;
+    padding: 15px;
+        .direccion{
+            grid-area: direccion;
+            display: flex;
+            margin-top: 0.5rem;
+            font-size: small;
+            }
+        .partido{
+        grid-area: partido;
+        display: flex;
+        padding: 0;
+        margin-top: 0.5rem;
+        } 
+    }
+    
+}
+/* Style Carrito */
+.inicioCarrito{
+    display: block;
+    justify-content: center;
+    margin-top: 2rem;
+    h2{
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+}
+.alert1{
+    display: flex;
+    justify-content: center;
+    margin-top: 10rem;
+    margin-bottom: 35rem;
+}
+/* Style Contacto */
+.conteiner{
+    display: block;
+    align-items: center;
+}
+.escribinos{
+    display: flex;
+    justify-content: center;
+    h1{
+        display: flex;
+        justify-content: center;
+    }
+}
+.dudas{
+    display: flex;
+    justify-content: center;
+    margin-left: 3rem;
+    h2{
+        display: flex;
+        justify-content: center;
+        margin-left: 3rem;
+    }
+}
+.formulario{
+    display: block;
+    align-items: center;
+    margin-left: 4rem;
+    margin-bottom: 35rem;
+}
+/* Style Productos */
+.lomas{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.img-A{
+    margin-top: 2rem;
+}
+.img-B{
+    margin-top: 2rem;
+}
+.img-C{
+    margin-top: 2rem;
+}
+.img-D{
+    margin-top: 2rem;
+}
+.img-E{
+    margin-top: 2rem;
+}
+.img-F{
+    margin-top: 2rem;
+}
+.img-G{
+    margin-top: 2rem;
+}
+.img-H{
+    margin-top: 2rem;
+}
+.btn1{
+    margin-bottom: 2rem;
+}
+.btn2{
+    margin-bottom: 35rem;
+ }
+.masProd{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
 
 }
-.direccion{
-    grid-area: direccion;
-    display: flex;
-    margin-top: -100px;
-}
-.partido{
-    grid-area: partido;
-    display: flex;
-    padding: 0;
-    margin-top: -100px;
-} 
-
 }
 
 
@@ -294,8 +435,24 @@ body{
 @import "nosotros";
 @import "contacto";
 .inicioCarrito{
-    margin-top: 250px;
+    margin-top: 13rem;
     display: flex;
     justify-content: center;
+}
+.inicioCarrito{
+    display: block;
+    justify-content: center;
+    h2{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 40px;
+    }
+     .alert1{
+        display: flex;
+        justify-content: center;
+        margin-left: 10rem;
+        width: 80%;
+        font-size: 2rem;
+     }
 }
 }

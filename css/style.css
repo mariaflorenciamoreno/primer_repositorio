@@ -1,9 +1,12 @@
 @media screen and (max-width: 768px) {
   body {
-    background-color: #d2fad2; }
+    font-family: 'Gloria Hallelujah', cursive;
+    background-color: #d2fad2;
+    height: 80%; }
   header {
     background-color: white;
     padding: auto;
+    font-size: 1rem;
     margin-top: -10px;
     margin-right: -15px;
     margin-bottom: -10px;
@@ -34,63 +37,101 @@
               top: 0px; }
   .cuotas {
     width: 100%;
-    margin-top: 12px;
+    margin-top: 20px;
     margin-bottom: 0; }
-  .conteiner {
+  .conteiner1 {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: 0.3fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.4fr 1fr 1fr;
     grid-template-areas: "promo-title" "promo1" "promo2" "promo3" "promo4";
     align-items: center;
-    justify-items: center;
-    margin-top: -20px;
-    margin-bottom: -20px; }
-    .conteiner .promo-title {
+    justify-items: center; }
+    .conteiner1 .promo-title {
       grid-area: promo-title;
       display: flex;
       justify-content: center;
-      margin-top: -50px;
-      margin-bottom: -30px; }
-    .conteiner .promo1 {
+      margin-top: -180px; }
+    .conteiner1 .promo1 {
       grid-area: promo1; }
-      .conteiner .promo1 .img-1 {
+      .conteiner1 .promo1 .img-1 {
         display: flex;
         justify-content: center;
-        width: 400px;
-        height: 500px;
-        margin-top: 0px;
-        margin-left: 500px; }
-    .conteiner .promo2 {
-      grid-area: promo2; }
-      .conteiner .promo2 .img-2 {
-        width: 400px;
-        height: 300px; }
-    .conteiner .promo3 {
-      grid-area: promo3; }
-      .conteiner .promo3 .img-3 {
-        width: 400px;
-        height: 300px; }
-    .conteiner .promo4 {
-      grid-area: promo4; }
-      .conteiner .promo4 .img-4 {
-        width: 400px;
-        height: 400px;
+        margin-top: -280px;
+        margin-bottom: 20px; }
+      .conteiner1 .promo1 .p1 {
         display: flex;
-        justify-content: center; }
-    .conteiner .p1 {
-      margin-left: 200px;
+        justify-content: center;
+        font-size: 20px; }
+      .conteiner1 .promo1 .btn {
+        display: flex;
+        justify-content: center;
+        padding-top: 10px;
+        margin-top: 15px;
+        margin-bottom: 20px; }
+    .conteiner1 .promo2 {
+      grid-area: promo2; }
+      .conteiner1 .promo2 .img-2 {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px; }
+      .conteiner1 .promo2 .p1 {
+        display: flex;
+        justify-content: center;
+        font-size: 20px; }
+      .conteiner1 .promo2 .btn {
+        display: flex;
+        justify-content: center;
+        padding-top: 10px;
+        margin-top: 15px;
+        margin-bottom: 20px; }
+    .conteiner1 .promo3 {
+      grid-area: promo3; }
+      .conteiner1 .promo3 .img-3 {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px; }
+      .conteiner1 .promo3 .p1 {
+        display: flex;
+        justify-content: center;
+        font-size: 20px; }
+      .conteiner1 .promo3 .btn {
+        display: flex;
+        justify-content: center;
+        padding-top: 10px;
+        margin-top: 15px;
+        margin-bottom: 20px; }
+    .conteiner1 .promo4 {
+      grid-area: promo4; }
+      .conteiner1 .promo4 .img-4 {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px; }
+      .conteiner1 .promo4 .p1 {
+        display: flex;
+        justify-content: center;
+        font-size: 20px; }
+      .conteiner1 .promo4 .btn {
+        display: flex;
+        justify-content: center;
+        padding-top: 10px;
+        margin-top: 15px;
+        margin-bottom: -40rem; }
+    .conteiner1 .p1 {
+      display: flex;
+      justify-content: center;
       font-size: 20px; }
   footer {
     background-color: white;
-    height: 300px;
-    padding: 0;
-    margin-top: -13px;
+    height: 500px;
+    padding: 30px;
+    margin-top: -500px;
     margin-right: -15px;
     margin-bottom: -10px;
     margin-left: -6px; }
     footer .redes {
       display: flex;
       padding-left: auto;
+      padding-bottom: 20px;
       font-size: 20px;
       margin-right: 10px;
       margin-top: -3px;
@@ -102,7 +143,8 @@
         margin-top: 10px; }
     footer .leyenda {
       display: flex;
-      justify-content: center; }
+      justify-content: center;
+      padding-bottom: 20px; }
       footer .leyenda p {
         font-size: 18px;
         grid-area: leyenda;
@@ -110,7 +152,8 @@
         align-items: flex-start; }
     footer .redesfooter {
       display: flex;
-      justify-content: space-around; }
+      justify-content: space-around;
+      padding-bottom: 30px; }
       footer .redesfooter .redes2 {
         grid-area: redes2;
         font-size: 20px;
@@ -155,58 +198,133 @@
         margin-top: 50px;
         margin-bottom: -50px; }
   .nosotros-container {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(9, 1fr);
-    grid-template-areas: "about-us" "par1" "par2" "par3" "par4" "ubicacion" "mapa" "direccion" "partido";
-    justify-items: center;
+    display: block;
+    align-items: center;
+    margin-bottom: 20rem; }
+  .sobre {
+    grid-area: sobre;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem; }
+    .sobre .about-us {
+      grid-area: about-us;
+      display: flex;
+      justify-items: center;
+      margin-top: 20px; }
+  .sobreNos {
+    grid-area: sobreNos;
+    display: flex;
+    justify-content: center; }
+    .sobreNos .img-nos {
+      display: flex;
+      justify-content: center;
+      width: 90%;
+      margin-top: 30px; }
+  .nuestrasUbi {
+    grid-area: nuestraUbi;
+    display: flex;
+    justify-content: center; }
+    .nuestrasUbi .ubicacion {
+      grid-area: ubicacion;
+      display: flex;
+      justify-items: center;
+      margin-top: 1rem; }
+  .ubic {
+    grid-area: ubic;
+    display: flex;
+    justify-content: center; }
+    .ubic .mapa {
+      grid-area: mapa;
+      display: flex;
+      justify-items: center;
+      padding: 0;
+      margin-top: 1rem;
+      margin-bottom: 15rem;
+      width: 50%;
+      height: 50%; }
+    .ubic .direc {
+      grid-area: datos;
+      margin-top: 1rem;
+      margin-bottom: -50px;
+      padding: 15px; }
+      .ubic .direc .direccion {
+        grid-area: direccion;
+        display: flex;
+        margin-top: 0.5rem;
+        font-size: small; }
+      .ubic .direc .partido {
+        grid-area: partido;
+        display: flex;
+        padding: 0;
+        margin-top: 0.5rem; }
+  /* Style Carrito */
+  .inicioCarrito {
+    display: block;
+    justify-content: center;
+    margin-top: 2rem; }
+    .inicioCarrito h2 {
+      display: flex;
+      justify-content: center;
+      margin-top: 1rem; }
+  .alert1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 10rem;
+    margin-bottom: 35rem; }
+  /* Style Contacto */
+  .conteiner {
+    display: block;
     align-items: center; }
-  .about-us {
-    grid-area: about-us;
+  .escribinos {
     display: flex;
-    justify-items: center;
-    padding: 0;
-    margin-top: -100px;
-    margin-bottom: -100px; }
-  .par1 {
-    grid-area: par1;
-    padding: 0;
-    margin-top: -110px; }
-  .par2 {
-    grid-area: par2;
-    padding: 0;
-    margin-top: -110px; }
-  .par3 {
-    grid-area: par3;
-    padding: 0;
-    margin-top: -110px; }
-  .par4 {
-    grid-area: par4;
-    margin-top: -110px; }
-  .ubicacion {
-    grid-area: ubicacion;
+    justify-content: center; }
+    .escribinos h1 {
+      display: flex;
+      justify-content: center; }
+  .dudas {
     display: flex;
-    justify-items: center;
-    margin-top: -110px; }
-  .mapa {
-    grid-area: mapa;
+    justify-content: center;
+    margin-left: 3rem; }
+    .dudas h2 {
+      display: flex;
+      justify-content: center;
+      margin-left: 3rem; }
+  .formulario {
+    display: block;
+    align-items: center;
+    margin-left: 4rem;
+    margin-bottom: 35rem; }
+  /* Style Productos */
+  .lomas {
     display: flex;
-    justify-items: center;
-    padding: 0;
-    margin-top: -110px; }
-  .datos {
-    grid-area: datos;
-    margin-top: -110px;
-    margin-bottom: -50px; }
-  .direccion {
-    grid-area: direccion;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem; }
+  .img-A {
+    margin-top: 2rem; }
+  .img-B {
+    margin-top: 2rem; }
+  .img-C {
+    margin-top: 2rem; }
+  .img-D {
+    margin-top: 2rem; }
+  .img-E {
+    margin-top: 2rem; }
+  .img-F {
+    margin-top: 2rem; }
+  .img-G {
+    margin-top: 2rem; }
+  .img-H {
+    margin-top: 2rem; }
+  .btn1 {
+    margin-bottom: 2rem; }
+  .btn2 {
+    margin-bottom: 35rem; }
+  .masProd {
     display: flex;
-    margin-top: -100px; }
-  .partido {
-    grid-area: partido;
-    display: flex;
-    padding: 0;
-    margin-top: -100px; } }
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 3rem; } }
 
 @media screen and (min-width: 769px) and (max-width: 1440px) {
   body {
@@ -222,9 +340,9 @@
     header nav {
       display: flex;
       justify-content: space-between;
-      font-size: 23px;
+      font-size: 2rem;
       text-align: center;
-      text-indent: 30px;
+      text-indent: 15px;
       list-style-type: none;
       margin-right: -23px; }
       header nav .logo {
@@ -249,60 +367,117 @@
   .cuotas {
     width: 100%;
     margin-top: 190px; }
-  .conteiner {
-    padding: 10px; }
-    .conteiner .tituloPromo {
-      display: flex;
-      justify-content: center;
-      margin-top: 10px;
-      margin-bottom: 40px;
-      animation: cssAnimation_0 3000ms 6 ease-in-out 3000ms; }
+  .conteiner1 .tituloPromo {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    animation: cssAnimation_0 3000ms 6 ease-in-out 3000ms; }
   @keyframes cssAnimation_0 {
     to {
       font-size: 34px;
       font-weight: bolder;
       line-height: 1.2;
       letter-spacing: 6px; } }
-    .conteiner .promo1 {
-      justify-items: center;
-      margin: 2px auto; }
-      .conteiner .promo1 .img-1 {
-        width: 400px;
-        height: 400px;
-        transition: border 1022ms ease-out 239ms, border-radius 1022ms ease-out 239ms; }
-        .conteiner .promo1 .img-1:hover {
-          border: 75px hidden #646464;
-          border-radius: 44px; }
-    .conteiner .promo2 {
-      justify-items: center; }
-      .conteiner .promo2 .img-2 {
-        width: 60%;
-        height: 90%;
-        transition: border 1022ms ease-out 239ms, border-radius 1022ms ease-out 239ms; }
-        .conteiner .promo2 .img-2:hover {
-          border: 75px hidden #646464;
-          border-radius: 44px; }
-    .conteiner .promo3 {
-      justify-items: center; }
-      .conteiner .promo3 .img-3 {
-        width: 70%;
-        height: 80%;
-        transition: border 1022ms ease-out 239ms, border-radius 1022ms ease-out 239ms; }
-        .conteiner .promo3 .img-3:hover {
-          border: 75px hidden #646464;
-          border-radius: 44px; }
-    .conteiner .promo4 {
-      justify-items: center; }
-      .conteiner .promo4 .img-4 {
-        width: 70%;
-        height: 80%;
-        transition: border 1022ms ease-out 239ms, border-radius 1022ms ease-out 239ms; }
-        .conteiner .promo4 .img-4:hover {
-          border: 75px hidden #646464;
-          border-radius: 44px; }
-    .conteiner .p1 {
-      margin-left: 200px;
-      font-size: 20px; }
+  .conteiner1 .promo1 .img-1 {
+    display: flex;
+    justify-content: center;
+    margin-left: 20rem;
+    padding-top: 30px;
+    /* @include sizes(400px,400px); */
+    transition: border 1022ms ease-out 239ms, border-radius 1022ms ease-out 239ms; }
+    .conteiner1 .promo1 .img-1:hover {
+      border: 75px hidden #646464;
+      border-radius: 44px; }
+  .conteiner1 .promo1 .p1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 20rem; }
+  .conteiner1 .promo1 .btn {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    margin-top: 15px;
+    margin-left: 20rem; }
+  .conteiner1 .promo2 {
+    justify-content: center; }
+    .conteiner1 .promo2 .img-2 {
+      display: flex;
+      justify-content: center;
+      margin-left: 20rem;
+      padding-top: 30px;
+      /* @include sizes(60%,90%); */
+      transition: border 1022ms ease-out 239ms, border-radius 1022ms ease-out 239ms; }
+      .conteiner1 .promo2 .img-2:hover {
+        border: 75px hidden #646464;
+        border-radius: 44px; }
+    .conteiner1 .promo2 .p1 {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      margin-left: 20rem; }
+    .conteiner1 .promo2 .btn {
+      display: flex;
+      justify-content: center;
+      padding-top: 10px;
+      margin-top: 15px;
+      margin-left: 20rem; }
+  .conteiner1 .promo3 {
+    justify-content: center; }
+    .conteiner1 .promo3 .img-3 {
+      display: flex;
+      justify-content: center;
+      margin-left: 20rem;
+      padding-top: 30px;
+      margin-bottom: 20px;
+      /* @include sizes(70%,80%); */
+      transition: border 1022ms ease-out 239ms, border-radius 1022ms ease-out 239ms; }
+      .conteiner1 .promo3 .img-3:hover {
+        border: 75px hidden #646464;
+        border-radius: 44px; }
+    .conteiner1 .promo3 .p1 {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      margin-left: 20rem; }
+    .conteiner1 .promo3 .btn {
+      display: flex;
+      justify-content: center;
+      padding-top: 10px;
+      margin-top: 15px;
+      margin-left: 20rem;
+      margin-bottom: 20px; }
+  .conteiner1 .promo4 {
+    justify-items: center; }
+    .conteiner1 .promo4 .img-4 {
+      display: flex;
+      justify-content: center;
+      margin-left: 20rem;
+      padding-top: 30px;
+      margin-bottom: 20px;
+      /* @include sizes(70%,80%); */
+      transition: border 1022ms ease-out 239ms, border-radius 1022ms ease-out 239ms; }
+      .conteiner1 .promo4 .img-4:hover {
+        border: 75px hidden #646464;
+        border-radius: 44px; }
+    .conteiner1 .promo4 .p1 {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      margin-left: 20rem; }
+    .conteiner1 .promo4 .btn {
+      display: flex;
+      justify-content: center;
+      padding-top: 10px;
+      margin-top: 15px;
+      margin-left: 20rem;
+      margin-bottom: 20px; }
+  .conteiner1 .p1 {
+    display: flex;
+    justify-content: center; }
   .flexycent, footer .redes, footer .leyenda, footer .tit-pagos {
     display: flex;
     justify-content: center; }
@@ -315,12 +490,14 @@
     margin-bottom: -6px;
     margin-left: -6px; }
     footer .redes {
+      padding-top: 60px;
       padding-left: 0px;
-      margin-top: 10px;
+      margin-top: 30px;
       margin-right: 10px;
       margin-bottom: 0px;
       margin-left: 0px; }
       footer .redes h3 {
+        font-family: 'Gloria Hallelujah', cursive;
         font-size: 30px;
         margin-top: 10px; }
     footer .leyenda p {
@@ -339,15 +516,19 @@
         justify-items: center;
         font-size: 25px; }
     footer .tit-pagos .medios-pago {
+      padding-top: 15px;
+      font-family: 'Gloria Hallelujah', cursive;
       font-size: 30px; }
     footer .tarjetas {
       display: flex;
       justify-content: space-evenly;
       font-size: 20px; }
       footer .tarjetas font .pago-visa {
+        padding-top: 15px;
         font-size: 22px; }
       footer .tarjetas .pago-master {
-        font-size: 22px; }
+        font-size: 22px;
+        padding-top: 10px; }
   .lomas {
     display: flex;
     justify-content: center;
@@ -359,40 +540,66 @@
       font-weight: bolder;
       line-height: 1.2;
       letter-spacing: 6px; } }
-  .imgA, .imgB, .imgC, .imgD, .imgE, .imgF, .imgG, .imgH {
-    border: solid 2px #9159ac; }
   .imgA {
     display: flex;
     align-items: center;
-    margin-left: 150px;
+    margin-left: 20rem;
     transition: border 1022ms ease-out 239ms, border-radius 1022ms ease-out 239ms; }
     .imgA:hover {
       border: 75px hidden #646464;
       border-radius: 44px; }
+  .btn1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    margin-top: 15px;
+    margin-left: 20rem;
+    margin-bottom: 20px; }
   .imgB {
     display: flex;
     align-items: center;
-    margin-left: 150px;
+    margin-left: 20rem;
     transition: border 1022ms ease-out 239ms, border-radius 1022ms ease-out 239ms; }
     .imgB:hover {
       border: 75px hidden #646464;
       border-radius: 44px; }
+  .btn1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    margin-top: 15px;
+    margin-left: 20rem;
+    margin-bottom: 20px; }
   .imgC {
     display: flex;
     align-items: center;
-    margin-left: 150px;
+    margin-left: 20rem;
     transition: border 1022ms ease-out 239ms, border-radius 1022ms ease-out 239ms; }
     .imgC:hover {
       border: 75px hidden #646464;
       border-radius: 44px; }
+  .btn1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    margin-top: 15px;
+    margin-left: 20rem;
+    margin-bottom: 20px; }
   .imgD {
     display: flex;
     align-items: center;
-    margin-left: 150px;
+    margin-left: 20rem;
     transition: border 1022ms ease-out 239ms, border-radius 1022ms ease-out 239ms; }
     .imgD:hover {
       border: 75px hidden #646464;
       border-radius: 44px; }
+  .btn1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    margin-top: 15px;
+    margin-left: 20rem;
+    margin-bottom: 20px; }
   .masProd {
     display: flex;
     justify-content: center;
@@ -406,44 +613,81 @@
   .imgE {
     display: flex;
     align-items: center;
-    margin-left: 150px;
+    margin-left: 20rem;
     transition: border 1022ms ease-out 239ms, border-radius 1022ms ease-out 239ms; }
     .imgE:hover {
       border: 75px hidden #646464;
       border-radius: 44px; }
+  .btn1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    margin-top: 15px;
+    margin-left: 20rem;
+    margin-bottom: 20px; }
   .imgF {
     display: flex;
     align-items: center;
-    margin-left: 150px;
+    margin-left: 20rem;
     transition: border 1022ms ease-out 239ms, border-radius 1022ms ease-out 239ms; }
     .imgF:hover {
       border: 75px hidden #646464;
       border-radius: 44px; }
+  .btn1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    margin-top: 15px;
+    margin-left: 20rem;
+    margin-bottom: 20px; }
   .imgG {
     display: flex;
     align-items: center;
-    margin-left: 150px;
+    margin-left: 20rem;
     transition: border 1022ms ease-out 239ms, border-radius 1022ms ease-out 239ms; }
     .imgG:hover {
       border: 75px hidden #646464;
       border-radius: 44px; }
+  .btn1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    margin-top: 15px;
+    margin-left: 20rem;
+    margin-bottom: 20px; }
   .imgH {
     display: flex;
     align-items: center;
-    margin-left: 150px;
+    margin-left: 20rem;
     transition: border 1022ms ease-out 239ms, border-radius 1022ms ease-out 239ms; }
     .imgH:hover {
       border: 75px hidden #646464;
       border-radius: 44px; }
-  .p {
-    margin-left: 250px; }
+  .btn1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    margin-top: 15px;
+    margin-left: 20rem;
+    margin-bottom: 20px; }
+  .p1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 20rem; }
   .sobre {
     display: flex;
     justify-content: center;
     margin-top: 250px; }
     .sobre .about-us {
       display: flex;
-      justify-items: center; }
+      justify-items: center;
+      font-family: 'Gloria Hallelujah', cursive;
+      font-size: 3rem; }
+  .sobreNos {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px; }
   .nuestraUbi {
     display: flex;
     justify-content: center;
@@ -457,6 +701,7 @@
     display: flex;
     justify-content: space-around; }
     .ubic .mapa {
+      padding-bottom: 20px;
       display: flex; }
     .ubic .direc {
       display: block;
@@ -465,15 +710,21 @@
       margin-right: 50px; }
       .ubic .direc .direccion {
         display: flex;
-        justify-items: flex-start; }
+        justify-items: flex-start;
+        font-size: 20px; }
       .ubic .direc .partido {
         display: flex;
-        justify-items: flex-start; }
+        justify-items: flex-start;
+        font-size: 20px; }
+  body {
+    background-color: #d2fad2;
+    font-family: 'Gloria Hallelujah', cursive; }
   .escribinos {
     display: flex;
     justify-content: center;
-    margin-top: 250px;
-    margin-bottom: 10px;
+    padding-top: 60px;
+    margin-top: 100px;
+    margin-bottom: 60px;
     animation: cssAnimation_0 3000ms 6 ease-in-out 3000ms; }
   @keyframes cssAnimation_0 {
     to {
@@ -481,6 +732,8 @@
       font-weight: bolder;
       line-height: 1.2;
       letter-spacing: 6px; } }
+    .escribinos h2 {
+      font-size: 3rem; }
   .dudas {
     display: flex;
     justify-content: center; }
@@ -488,6 +741,19 @@
     display: flex;
     justify-content: center; }
   .inicioCarrito {
-    margin-top: 250px;
+    margin-top: 13rem;
     display: flex;
-    justify-content: center; } }
+    justify-content: center; }
+  .inicioCarrito {
+    display: block;
+    justify-content: center; }
+    .inicioCarrito h2 {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 40px; }
+    .inicioCarrito .alert1 {
+      display: flex;
+      justify-content: center;
+      margin-left: 10rem;
+      width: 80%;
+      font-size: 2rem; } }

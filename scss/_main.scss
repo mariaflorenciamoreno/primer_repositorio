@@ -2,10 +2,11 @@
     width: $width;
     height: $heigth;
 }
-.conteiner{
-    padding: 10px;
+.conteiner1{
     .tituloPromo{
         display: flex;
+        align-items: center;
+        justify-items: center;
         justify-content: center;
         margin-top: 10px;
         margin-bottom: 40px;
@@ -19,54 +20,129 @@
                 }
          }
 }
-
     .promo1{
-        justify-items: center;
-        margin: 2px auto;
+        
         .img-1{
-            @include sizes(400px,400px);
+            display: flex;
+            justify-content: center;
+            margin-left: 20rem ;
+            padding-top: 30px;
+            /* @include sizes(400px,400px); */
             transition: border 1022ms ease-out 239ms, border-radius 1022ms ease-out 239ms;
             &:hover{
                 border: 75px hidden rgba(100, 100, 100, 1);
                 border-radius: 44px;
             }
+        }
+        .p1{
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            margin-left: 20rem;
+            
+        }
+        .btn{
+            display: flex;
+            justify-content: center;
+            padding-top: 10px;
+            margin-top: 15px;
+            margin-left: 20rem;
         }
     }
     .promo2{
-        justify-items: center;
+        justify-content: center;
         .img-2{
-            @include sizes(60%,90%);
+            display: flex;
+            justify-content: center;
+            margin-left: 20rem;
+            padding-top: 30px;
+            /* @include sizes(60%,90%); */
             transition: border 1022ms ease-out 239ms, border-radius 1022ms ease-out 239ms;
             &:hover{
                 border: 75px hidden rgba(100, 100, 100, 1);
                 border-radius: 44px;
             }
-        }   
+        }  
+        .p1{
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            margin-left: 20rem;
+            
+        }
+        .btn{
+            display: flex;
+            justify-content: center;
+            padding-top: 10px;
+            margin-top: 15px;
+            margin-left: 20rem;
+        } 
     }
     .promo3{
-        justify-items: center;
+        justify-content: center;
         .img-3{
-            @include sizes(70%,80%);
+            display: flex;
+            justify-content: center;
+            margin-left: 20rem;
+            padding-top: 30px;
+            margin-bottom: 20px;
+            /* @include sizes(70%,80%); */
             transition: border 1022ms ease-out 239ms, border-radius 1022ms ease-out 239ms;
             &:hover{
                 border: 75px hidden rgba(100, 100, 100, 1);
                 border-radius: 44px;
             }
         }
+        .p1{
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            margin-left: 20rem;
+            
+        }
+                .btn{
+            display: flex;
+            justify-content: center;
+            padding-top: 10px;
+            margin-top: 15px;
+            margin-left: 20rem;
+            margin-bottom: 20px;
+        }
+        
     }
     .promo4{
         justify-items: center;
         .img-4{
-            @include sizes(70%,80%);
+            display: flex;
+            justify-content: center;
+            margin-left: 20rem;
+            padding-top: 30px;
+            margin-bottom: 20px;
+            /* @include sizes(70%,80%); */
             transition: border 1022ms ease-out 239ms, border-radius 1022ms ease-out 239ms;
             &:hover{
                 border: 75px hidden rgba(100, 100, 100, 1);
                 border-radius: 44px; 
             }
         }
+        .p1{
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            margin-left: 20rem;
+            
+        }
+        .btn{
+            display: flex;
+            justify-content: center;
+            padding-top: 10px;
+            margin-top: 15px;
+            margin-left: 20rem;
+            margin-bottom: 20px;
+        }
     }
     .p1{
-        margin-left: 200px;
-        font-size: 20px;
+        display: flex;
+        justify-content: center;
 }
 }

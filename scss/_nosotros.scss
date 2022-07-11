@@ -5,9 +5,15 @@
         .about-us{
             display: flex;
             justify-items: center;
+            font-family: 'Gloria Hallelujah', cursive;
+            font-size: 3rem;
         }
 }
-
+.sobreNos{
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
 .nuestraUbi{
     display: flex;
     justify-content: center;
@@ -23,6 +29,7 @@
     display: flex;
     justify-content: space-around;
         .mapa{
+            padding-bottom: 20px;
             display: flex;
         }
         .direc{
@@ -33,10 +40,12 @@
                 .direccion{
                     display: flex;
                     justify-items: flex-start;
+                    font-size: 20px;
                 }
                 .partido{
                     display: flex;
                     justify-items: flex-start;
+                    font-size: 20px;
                 }
         }
 }
