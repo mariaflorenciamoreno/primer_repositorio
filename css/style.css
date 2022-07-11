@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 440px) and (max-width: 768px) {
   body {
     font-family: 'Gloria Hallelujah', cursive;
     background-color: #d2fad2;
