@@ -309,6 +309,7 @@
   .formulario {
     display: block;
     align-items: center;
+    margin-right: 20px;
     /* margin-left: 2rem; */
     margin-bottom: 35rem; }
   /* Style Productos */
@@ -389,7 +390,7 @@
     align-items: center;
     justify-items: center;
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 60px;
     margin-bottom: 40px;
     animation: cssAnimation_0 3000ms 6 ease-in-out 3000ms; }
   @keyframes cssAnimation_0 {
