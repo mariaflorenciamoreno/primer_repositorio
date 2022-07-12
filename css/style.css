@@ -14,14 +14,17 @@
   .cabecera1 {
     background-color: white;
     display: flex;
-    justify-items: space-between; }
+    align-items: center;
+    justify-items: space-between;
+    position: relative; }
     .cabecera1 nav {
       list-style-type: none;
       text-decoration: none;
       color: black;
       grid-area: nav; }
       .cabecera1 nav .logo {
-        width: 50%;
+        width: 40%;
+        height: 40%;
         display: flex; }
         .cabecera1 nav .logo ul {
           text-decoration: none; }
@@ -139,17 +142,18 @@
       margin-bottom: -20px;
       justify-content: center; }
       footer .redes h3 {
-        font-size: 20px;
+        font-size: 18px;
         margin-top: 10px; }
     footer .leyenda {
       display: flex;
       justify-content: center;
       padding-bottom: 20px; }
       footer .leyenda p {
-        font-size: 18px;
+        font-size: 15px;
         grid-area: leyenda;
         justify-content: center;
-        align-items: flex-start; }
+        padding-right: 0;
+        padding-left: 0; }
     footer .redesfooter {
       display: flex;
       justify-content: space-around;
@@ -183,7 +187,8 @@
         grid-area: medios-pago;
         padding: 0;
         margin-top: 20px;
-        margin-bottom: -10px; }
+        margin-bottom: -10px;
+        font-size: 18px; }
     footer .tarjetas {
       display: flex;
       justify-content: space-evenly; }
@@ -191,12 +196,14 @@
         grid-area: pago-visa;
         padding: 0;
         margin-top: 50px;
-        margin-bottom: -10px; }
+        margin-bottom: -10px;
+        font-size: 15px; }
       footer .tarjetas .pago-master {
         grid-area: pago-master;
         padding: 0;
         margin-top: 50px;
-        margin-bottom: -50px; }
+        margin-bottom: -50px;
+        font-size: 15px; }
   .nosotros-container {
     display: block;
     align-items: center;
@@ -224,11 +231,17 @@
     grid-area: nuestraUbi;
     display: flex;
     justify-content: center; }
+    .nuestrasUbi h2 {
+      display: flex;
+      justify-content: center;
+      justify-items: center;
+      font-size: 10px; }
     .nuestrasUbi .ubicacion {
       grid-area: ubicacion;
       display: flex;
       justify-items: center;
-      margin-top: 1rem; }
+      margin-top: 1rem;
+      font-size: 10px; }
   .ubic {
     grid-area: ubic;
     display: flex;
@@ -239,6 +252,7 @@
       justify-items: center;
       padding: 0;
       margin-top: 1rem;
+      margin-left: 20px;
       margin-bottom: 15rem;
       width: 50%;
       height: 50%; }
@@ -246,6 +260,7 @@
       grid-area: datos;
       margin-top: 1rem;
       margin-bottom: -50px;
+      margin-left: 10px;
       padding: 15px; }
       .ubic .direc .direccion {
         grid-area: direccion;
@@ -256,6 +271,7 @@
         grid-area: partido;
         display: flex;
         padding: 0;
+        font-size: small;
         margin-top: 0.5rem; }
   /* Style Carrito */
   .inicioCarrito {
@@ -280,7 +296,8 @@
     justify-content: center; }
     .escribinos h1 {
       display: flex;
-      justify-content: center; }
+      justify-content: center;
+      margin-bottom: 15px; }
   .dudas {
     display: flex;
     justify-content: center;
@@ -533,6 +550,7 @@
     display: flex;
     justify-content: center;
     margin-top: 250px;
+    margin-bottom: 60px;
     animation: cssAnimation_0 3000ms 6 ease-in-out 3000ms; }
   @keyframes cssAnimation_0 {
     to {
@@ -723,8 +741,8 @@
     display: flex;
     justify-content: center;
     padding-top: 60px;
-    margin-top: 100px;
-    margin-bottom: 60px;
+    margin-top: 110px;
+    margin-bottom: 40px;
     animation: cssAnimation_0 3000ms 6 ease-in-out 3000ms; }
   @keyframes cssAnimation_0 {
     to {
@@ -736,7 +754,8 @@
       font-size: 3rem; }
   .dudas {
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    margin-top: -10px; }
   .formulario {
     display: flex;
     justify-content: center; }

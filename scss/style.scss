@@ -19,14 +19,17 @@ $bg-blanco:white;
 .cabecera1{
     background-color: white;
     display:flex;
+    align-items: center;
     justify-items: space-between;
+    position: relative;
         nav{
             list-style-type: none;
             text-decoration: none;
             color: black;
             grid-area: nav;
                 .logo{
-                    width: 50%;
+                    width: 40%;
+                    height: 40%;
                     display: flex;
                         ul{
                             text-decoration: none;
@@ -180,7 +183,7 @@ footer{
             margin-bottom: -20px;
             justify-content: center;
                h3{
-                 font-size: 20px;
+                 font-size: 18px;
                  margin-top: 10px;
                }
         }
@@ -189,10 +192,12 @@ footer{
             justify-content: center;
             padding-bottom: 20px;
                 p{
-                  font-size: 18px;
+                  font-size: 15px;
                   grid-area: leyenda;
                   justify-content: center;
-                  align-items: flex-start;
+                  padding-right: 0;
+                  padding-left: 0;
+
                 }
         }
         .redesfooter{
@@ -234,6 +239,7 @@ footer{
         padding: 0;
         margin-top: 20px;
         margin-bottom: -10px;
+        font-size: 18px;
     }
 }
 .tarjetas{
@@ -244,12 +250,14 @@ footer{
             padding: 0;
             margin-top: 50px;
             margin-bottom: -10px;
+            font-size: 15px;
         }
         .pago-master{
             grid-area: pago-master;
             padding: 0;
             margin-top: 50px;
             margin-bottom: -50px;
+            font-size: 15px;
         } 
     }
 }
@@ -285,11 +293,18 @@ footer{
     grid-area: nuestraUbi;
     display: flex;
     justify-content: center;
-    .ubicacion{
+    h2{
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        font-size: 10px;
+    }
+       .ubicacion{
         grid-area: ubicacion;
         display: flex;
         justify-items: center;
         margin-top: 1rem;
+        font-size: 10px;
         }
 }
 .ubic{
@@ -302,6 +317,7 @@ footer{
     justify-items: center;
     padding: 0;
     margin-top:1rem ;
+    margin-left: 20px;
     margin-bottom: 15rem;
     width: 50%;
     height: 50%;
@@ -310,6 +326,7 @@ footer{
     grid-area: datos;
     margin-top: 1rem;
     margin-bottom: -50px;
+    margin-left: 10px;
     padding: 15px;
         .direccion{
             grid-area: direccion;
@@ -321,6 +338,7 @@ footer{
         grid-area: partido;
         display: flex;
         padding: 0;
+        font-size: small;
         margin-top: 0.5rem;
         } 
     }
@@ -354,6 +372,7 @@ footer{
     h1{
         display: flex;
         justify-content: center;
+        margin-bottom: 15px;
     }
 }
 .dudas{

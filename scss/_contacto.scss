@@ -6,8 +6,8 @@ body{
     display: flex;
     justify-content: center;
     padding-top: 60px;
-    margin-top: 100px;
-    margin-bottom: 60px;
+    margin-top: 110px;
+    margin-bottom: 40px;
     animation: cssAnimation_0 3000ms 6 ease-in-out 3000ms;
             @keyframes cssAnimation_0 {
             to {
@@ -19,11 +19,12 @@ body{
             }
             h2{
                 font-size: 3rem;
-            }
+                            }
 }
 .dudas{
       display: flex;
       justify-content: center;
+      margin-top: -10px;
 }
 .formulario{
     display: flex;
